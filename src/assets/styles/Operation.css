@@ -1,0 +1,4 @@
+.header-content{
+    animation: fade-out 1s linear;
+    animation-fill-mode: forwards;
+}
