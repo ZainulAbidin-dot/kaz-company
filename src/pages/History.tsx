@@ -50,7 +50,7 @@ export default function History() {
         <div className='fixed inset-0 w-full h-full bg-black opacity-75' />
       </div>
 
-      <div className='max-w-7xl px-4 isolate z-10'>
+      <div className='max-w-7xl mx-auto px-4 isolate z-10'>
         <h1 className='!text-3xl md:!text-5xl font-bold text-white my-8 text-center'>Saudi Controls History</h1>
         <HistoryTimeline />
       </div>
