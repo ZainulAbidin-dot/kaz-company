@@ -1,4 +1,19 @@
 import st1 from '@/assets/images/om1.png';
+import partner6 from '@/assets/images/partner6.jpg';
+import partner7 from '@/assets/images/partner7.jpg';
+import partner8 from '@/assets/images/partner8.jpg';
+import partner9 from '@/assets/images/partner9.jpg';
+import partner10 from '@/assets/images/partner10.jpg';
+import partner11 from '@/assets/images/partner11.jpg';
+import partner12 from '@/assets/images/partner12.jpg';
+import partner13 from '@/assets/images/partner13.jpg';
+import partner14 from '@/assets/images/partner14.jpg';
+import partner15 from '@/assets/images/partner15.jpg';
+import partner16 from '@/assets/images/partner16.jpg';
+import partner17 from '@/assets/images/partner17.jpg';
+import partner18 from '@/assets/images/partner18.jpg';
+import partner19 from '@/assets/images/partner19.jpg';
+import partner20 from '@/assets/images/partner20.jpg';
 
 export const navLinks = [
   {
@@ -72,21 +87,24 @@ const experiences = [
 
 const testimonials = [
   {
-    testimonial: 'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
+    testimonial:
+      'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
     name: 'Sara Lee',
     designation: 'CFO',
     company: 'Acme Co',
     image: 'https://randomuser.me/api/portraits/women/4.jpg',
   },
   {
-    testimonial: "I've never met a web developer who truly cares about their clients' success like Rick does.",
+    testimonial:
+      "I've never met a web developer who truly cares about their clients' success like Rick does.",
     name: 'Chris Brown',
     designation: 'COO',
     company: 'DEF Corp',
     image: 'https://randomuser.me/api/portraits/men/5.jpg',
   },
   {
-    testimonial: "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+    testimonial:
+      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
     name: 'Lisa Wang',
     designation: 'CTO',
     company: '456 Enterprises',
@@ -160,4 +178,22 @@ const projects = [
   },
 ];
 
-export { experiences, testimonials, projects };
+const partners = [
+  partner6,
+  partner7,
+  partner8,
+  partner9,
+  partner10,
+  partner11,
+  partner12,
+  partner13,
+  partner14,
+  partner15,
+  partner16,
+  partner17,
+  partner18,
+  partner19,
+  partner20,
+];
+
+export { experiences, testimonials, projects, partners };

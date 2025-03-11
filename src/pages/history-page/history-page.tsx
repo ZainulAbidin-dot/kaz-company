@@ -1,8 +1,7 @@
-import { Card } from '@/components/ui/card';
 import careers_img from '@/assets/images/career_img_3.jpg';
+import { Card } from '@/components/ui/card';
+import { useFadeInAnimation } from '@/hooks/use-fadein-animation';
 import { cn } from '@/lib/utils';
-import { useIsMobile } from '@/hooks/use-is-mobile';
-import { useEffect, useRef } from 'react';
 
 const events = [
   {
@@ -42,16 +41,18 @@ const events = [
   },
 ];
 
-export default function History() {
+export function HistoryPage() {
   return (
-    <div>
-      <div className='fixed inset-0 pointer-events-none'>
-        <img src={careers_img} alt='' className='fixed inset-0 w-full h-full object-cover -z-10' />
-        <div className='fixed inset-0 w-full h-full bg-black opacity-75' />
+    <div className="relative min-h-screen">
+      <div className="pointer-events-none fixed inset-0 -z-20">
+        <img src={careers_img} alt="" className="h-full w-full object-cover" />
+        <div className="absolute inset-0 h-full w-full bg-black opacity-75" />
       </div>
 
-      <div className='max-w-7xl mx-auto px-4 isolate z-10'>
-        <h1 className='!text-3xl md:!text-5xl font-bold text-white my-8 text-center'>Saudi Controls History</h1>
+      <div className="relative z-10 mx-auto max-w-7xl px-4">
+        <h1 className="my-8 text-center !text-3xl font-bold text-white md:!text-5xl">
+          Saudi Controls History
+        </h1>
         <HistoryTimeline />
       </div>
     </div>
@@ -60,26 +61,28 @@ export default function History() {
 
 function HistoryTimeline() {
   return (
-    <div className='relative'>
-      <div className='absolute top-0 bottom-0 left-4 md:left-1/2 w-1 bg-black md:-translate-x-1/2' />
+    <div className="relative">
+      <div className="absolute top-0 bottom-0 left-4 w-1 bg-black md:left-1/2 md:-translate-x-1/2" />
       {events.map((event, index) => (
         <div
           key={index}
           className={cn(
-            'flex items-start md:items-center gap-4 md:gap-0 mb-8',
+            'mb-8 flex items-start gap-4 md:items-center md:gap-0',
             index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
           )}
         >
           <div
             className={cn(
-              'w-6 h-6 rounded-full bg-black flex-shrink-0 relative',
+              'relative h-6 w-6 flex-shrink-0 rounded-full bg-black',
               'translate-x-1/4 md:translate-x-0',
-              index % 2 === 0 ? 'md:left-1/2 md:-translate-x-1/2' : 'md:right-1/2 md:translate-x-1/2'
+              index % 2 === 0
+                ? 'md:left-1/2 md:-translate-x-1/2'
+                : 'md:right-1/2 md:translate-x-1/2'
             )}
           />
 
           {/* Spacer for desktop layout */}
-          <div className='hidden md:block md:w-1/2' />
+          <div className="hidden md:block md:w-1/2" />
 
           {/* Card */}
           <HistoryTimelineCard event={event} index={index} />
@@ -89,52 +92,31 @@ function HistoryTimeline() {
   );
 }
 
-function HistoryTimelineCard({ event, index }: { event: (typeof events)[number]; index: number }) {
-  const cardRef = useFadeInAnimation(index);
+function HistoryTimelineCard({
+  event,
+  index,
+}: {
+  event: (typeof events)[number];
+  index: number;
+}) {
+  const animationClass =
+    index % 2 === 0 ? 'animate-fadeInLeft' : 'animate-fadeInRight';
+
+  const cardRef = useFadeInAnimation({
+    animationClass,
+    threshold: 0.5,
+  });
+
   return (
-    <div className='flex-1 md:w-1/2 opacity-0' ref={cardRef}>
-      <Card className='bg-[rgba(255,255,255,0.1)] backdrop-blur-md border border-[rgba(255,255,255,0.2)] p-4 md:p-6'>
-        <div className='text-white'>
-          <div className='text-sm mb-2'>{event.title}</div>
-          <h3 className='text-xl font-bold mb-2'>{event.cardTitle}</h3>
-          <h4 className='text-lg mb-2'>{event.cardSubtitle}</h4>
-          <p className='text-sm'>{event.cardDetailedText}</p>
+    <div className="flex-1 opacity-0 md:w-1/2" ref={cardRef}>
+      <Card className="border border-[rgba(255,255,255,0.2)] bg-[rgba(255,255,255,0.1)] p-4 backdrop-blur-md md:p-6">
+        <div className="text-white">
+          <div className="mb-2 text-sm">{event.title}</div>
+          <h3 className="mb-2 text-xl font-bold">{event.cardTitle}</h3>
+          <h4 className="mb-2 text-lg">{event.cardSubtitle}</h4>
+          <p className="text-sm">{event.cardDetailedText}</p>
         </div>
       </Card>
     </div>
   );
-}
-
-function useFadeInAnimation(index: number) {
-  const { isMobile } = useIsMobile();
-  const elementRef = useRef<HTMLDivElement>(null);
-
-  const animationClass = isMobile || index % 2 === 0 ? 'animate-fadeInLeft' : 'animate-fadeInRight';
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add(animationClass);
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.5 }
-    );
-
-    const currentRef = elementRef.current;
-    if (currentRef) {
-      observer.observe(currentRef);
-    }
-
-    return () => {
-      if (currentRef) {
-        observer.unobserve(currentRef);
-      }
-    };
-  }, [animationClass]);
-
-  return elementRef;
 }

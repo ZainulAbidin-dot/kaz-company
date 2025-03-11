@@ -1,29 +1,20 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import About from './pages/About';
-import History from './pages/History';
-import Projects from './pages/Projects';
-import Clients from './pages/Clients';
-import Contact from './pages/Contact';
-import NotFound from './pages/NotFound';
-import StickyNavLayout from './components/StickyNavbar';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 
-const App = () => {
+import { AppLayout } from './components/app-layout/app-layout';
+import { HistoryPage } from './pages/history-page/history-page';
+import { HomePage } from './pages/home-page/home-page';
+
+function App() {
   return (
-    <Router>
-      <StickyNavLayout>
+    <Router basename="">
+      <AppLayout>
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/history' element={<History />} />
-          <Route path='/projects' element={<Projects />} />
-          <Route path='/clients' element={<Clients />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path='*' element={<NotFound />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/history" element={<HistoryPage />} />
         </Routes>
-      </StickyNavLayout>
+      </AppLayout>
     </Router>
   );
-};
+}
 
 export default App;
