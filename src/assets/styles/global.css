@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @tailwind base;
 
@@ -195,7 +195,6 @@ button:focus-visible {
   }
 }
 
-
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 12px;
@@ -224,4 +223,37 @@ html {
 html:hover ::-webkit-scrollbar {
   width: 12px;
   height: 12px;
+}
+
+/* Keyframes for fadeInLeft */
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Keyframes for fadeInRight */
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animation classes */
+.animate-fadeInLeft {
+  animation: fadeInLeft 1500ms forwards;
+}
+
+.animate-fadeInRight {
+  animation: fadeInRight 1500ms forwards;
 }

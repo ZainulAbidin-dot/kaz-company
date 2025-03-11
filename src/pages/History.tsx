@@ -1,139 +1,140 @@
-import * as React from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import careers_img from '@/assets/images/career_img_3.jpg'
+import { Card } from '@/components/ui/card';
+import careers_img from '@/assets/images/career_img_3.jpg';
+import { cn } from '@/lib/utils';
+import { useIsMobile } from '@/hooks/use-is-mobile';
+import { useEffect, useRef } from 'react';
 
 const events = [
   {
-    title: "May 1940",
-    cardTitle: "Dunkirk",
-    cardSubtitle:
-      "Men of the British Expeditionary Force (BEF) wade out to a destroyer during the evacuation from Dunkirk.",
+    title: '1990',
+    cardTitle: 'Company Foundation',
+    cardSubtitle: 'Saudi Controls was established in Riyadh',
     cardDetailedText:
-      "On 10 May 1940, Hitler began his long-awaited offensive in the west...",
-    direction: "left",
+      'Saudi Controls was founded with a vision to become a leading provider of industrial automation and control systems in the Kingdom of Saudi Arabia.',
   },
   {
-    title: "May 1940",
-    cardTitle: "Dunkirk",
-    cardSubtitle:
-      "Men of the British Expeditionary Force (BEF) wade out to a destroyer during the evacuation from Dunkirk.",
+    title: '1995',
+    cardTitle: 'First Major Project',
+    cardSubtitle: 'Partnership with Saudi Aramco',
     cardDetailedText:
-      "On 10 May 1940, Hitler began his long-awaited offensive in the west...",
-    direction: "right",
+      "Completed our first major installation project with Saudi Aramco, implementing advanced control systems across multiple facilities. This partnership marked a significant milestone in our company's growth and established our reputation in the industry.",
   },
   {
-    title: "May 1940",
-    cardTitle: "Dunkirk",
-    cardSubtitle:
-      "Men of the British Expeditionary Force (BEF) wade out to a destroyer during the evacuation from Dunkirk.",
+    title: '2005',
+    cardTitle: 'International Expansion',
+    cardSubtitle: 'Opening of Dubai Office',
     cardDetailedText:
-      "On 10 May 1940, Hitler began his long-awaited offensive in the west...",
-    direction: "left",
+      'Expanded operations to the UAE with the opening of our Dubai office, marking the beginning of our international presence in the Middle East region.',
   },
   {
-    title: "May 1940",
-    cardTitle: "Dunkirk",
-    cardSubtitle:
-      "Men of the British Expeditionary Force (BEF) wade out to a destroyer during the evacuation from Dunkirk.",
+    title: '2015',
+    cardTitle: 'Digital Transformation',
+    cardSubtitle: 'Launch of Smart Solutions Division',
     cardDetailedText:
-      "On 10 May 1940, Hitler began his long-awaited offensive in the west...",
-    direction: "right",
+      'Established our Smart Solutions division to focus on Industry 4.0 technologies, IoT integration, and advanced automation systems. This strategic move positioned us at the forefront of the digital transformation in industrial control systems.',
   },
-  // ... other events
+  {
+    title: '2023',
+    cardTitle: 'Innovation Center',
+    cardSubtitle: 'Research & Development Facility',
+    cardDetailedText:
+      'Opened state-of-the-art Innovation Center in Riyadh, dedicated to developing next-generation control systems and training future engineers. The facility serves as a hub for technological advancement and knowledge transfer in the region.',
+  },
 ];
 
-const HistoryContent = () => {
-  const containerRef = React.useRef<HTMLDivElement>(null);
-
-  // React.useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     if (containerRef.current) {
-  //       containerRef.current.scrollBy({
-  //         top: 3,
-  //         behavior: "smooth",
-  //       });
-  //     }
-  //   }, 20);
-
-  //   return () => clearInterval(interval);
-  // }, []);
-
+export default function History() {
   return (
-    <div
-      ref={containerRef}
-      className="flex flex-col gap-y-3 w-full my-4"
-      aria-activedescendant=""
-    >
-      <Circle />
+    <div>
+      <div className='fixed inset-0 pointer-events-none'>
+        <img src={careers_img} alt='' className='fixed inset-0 w-full h-full object-cover -z-10' />
+        <div className='fixed inset-0 w-full h-full bg-black opacity-75' />
+      </div>
 
+      <div className='max-w-7xl px-4 isolate z-10'>
+        <h1 className='!text-3xl md:!text-5xl font-bold text-white my-8 text-center'>Saudi Controls History</h1>
+        <HistoryTimeline />
+      </div>
+    </div>
+  );
+}
+
+function HistoryTimeline() {
+  return (
+    <div className='relative'>
+      <div className='absolute top-0 bottom-0 left-4 md:left-1/2 w-1 bg-black md:-translate-x-1/2' />
       {events.map((event, index) => (
-        <React.Fragment key={index}>
-          <div className="grid grid-cols-[1fr_auto_1fr] gap-x-2 items-center mx-auto">
-            {event.direction === "left" ? (
-              <EventCard items={event} />
-            ) : (
-              <div></div>
+        <div
+          key={index}
+          className={cn(
+            'flex items-start md:items-center gap-4 md:gap-0 mb-8',
+            index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+          )}
+        >
+          <div
+            className={cn(
+              'w-6 h-6 rounded-full bg-black flex-shrink-0 relative',
+              'translate-x-1/4 md:translate-x-0',
+              index % 2 === 0 ? 'md:left-1/2 md:-translate-x-1/2' : 'md:right-1/2 md:translate-x-1/2'
             )}
-            <Pillar />
-            {event.direction === "right" ? (
-              <EventCard items={event} />
-            ) : (
-              <div></div>
-            )}
-          </div>
-          <Circle />
-        </React.Fragment>
+          />
+
+          {/* Spacer for desktop layout */}
+          <div className='hidden md:block md:w-1/2' />
+
+          {/* Card */}
+          <HistoryTimelineCard event={event} index={index} />
+        </div>
       ))}
     </div>
   );
-};
-
-const Circle = () => {
-  return <div className="rounded-full w-6 h-6 bg-black mx-auto z-90"></div>;
-};
-
-const Pillar = () => {
-  return (
-    <div className="rounded-t-full rounded-b-full w-2 h-full bg-black mx-auto z-90"></div>
-  );
-};
-
-interface Item {
-  cardTitle: string;
-  cardSubtitle: string;
-  cardDetailedText: string;
 }
 
-const EventCard = ({ items }: { items: Item }) => {
+function HistoryTimelineCard({ event, index }: { event: (typeof events)[number]; index: number }) {
+  const cardRef = useFadeInAnimation(index);
   return (
-    <Card
-      className="mt-10 flex flex-col items-center justify-center p-6 
-    bg-white 
-    dark:bg-[rgba(182, 182, 199, 0.12)] shadow-lg backdrop-blur-xs border border-[rgba(255,255,255,0.2)]"
-    >
-      <CardContent className="min-h-[50vh] text-black">
-        <h2 className="text-xl font-bold">{items.cardTitle}</h2>
-        <h3 className="text-lg">{items.cardSubtitle}</h3>
-        <p className="text-sm">{items.cardDetailedText}</p>
-      </CardContent>
-    </Card>
+    <div className='flex-1 md:w-1/2 opacity-0' ref={cardRef}>
+      <Card className='bg-[rgba(255,255,255,0.1)] backdrop-blur-md border border-[rgba(255,255,255,0.2)] p-4 md:p-6'>
+        <div className='text-white'>
+          <div className='text-sm mb-2'>{event.title}</div>
+          <h3 className='text-xl font-bold mb-2'>{event.cardTitle}</h3>
+          <h4 className='text-lg mb-2'>{event.cardSubtitle}</h4>
+          <p className='text-sm'>{event.cardDetailedText}</p>
+        </div>
+      </Card>
+    </div>
   );
-};
-
-const History = () => {
-  return (
-    <>
-      <div className="mt-5 text-4xl text-white z-100 fixed top-0 left-0 w-full text-center py-4">Saudi Controls History</div>
-      <div className="flex items-center justify-center mt-20">
-      <img src={careers_img} alt="" className="fixed inset-0 w-full h-full object-cover" />
-      <div className="fixed absolute inset-0 bg-[#00000099]"></div>
-
-      {/* Hero Text */}
-      <div className='w-[80%] overflow-scroll mt-20'>
-        <HistoryContent />
-      </div>
-      </div>
-    </>
-  )
 }
-export default History;
+
+function useFadeInAnimation(index: number) {
+  const { isMobile } = useIsMobile();
+  const elementRef = useRef<HTMLDivElement>(null);
+
+  const animationClass = isMobile || index % 2 === 0 ? 'animate-fadeInLeft' : 'animate-fadeInRight';
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add(animationClass);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    const currentRef = elementRef.current;
+    if (currentRef) {
+      observer.observe(currentRef);
+    }
+
+    return () => {
+      if (currentRef) {
+        observer.unobserve(currentRef);
+      }
+    };
+  }, [animationClass]);
+
+  return elementRef;
+}
