@@ -170,10 +170,11 @@ export function SolutionsSection() {
                     style={{
                       left: `${x}px`,
                       top: `${y}px`,
-                      transform: 'translate(-50%, -50%)',
+                      translate: '-50% -50%',
                       animationDuration: '60s',
                       animationTimingFunction: 'linear',
                       animationDirection: 'reverse',
+                      transformOrigin: 'center',
                     }}
                   >
                     <SolutionItem solution={solution} />
