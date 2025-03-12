@@ -153,7 +153,6 @@ html:hover ::-webkit-scrollbar {
   height: 12px;
 }
 
-/* Keyframes for fadeInLeft */
 @keyframes fadeInLeft {
   0% {
     opacity: 0;
@@ -165,7 +164,6 @@ html:hover ::-webkit-scrollbar {
   }
 }
 
-/* Keyframes for fadeInRight */
 @keyframes fadeInRight {
   0% {
     opacity: 0;
@@ -177,8 +175,7 @@ html:hover ::-webkit-scrollbar {
   }
 }
 
-/* Keyframes for fadeInUp */
-@keyframes fadeInUp {
+@keyframes fadeInDown {
   0% {
     opacity: 0;
     transform: translateY(100px);
@@ -189,8 +186,7 @@ html:hover ::-webkit-scrollbar {
   }
 }
 
-/* Keyframes for fadeInDown */
-@keyframes fadeInDown {
+@keyframes fadeInUp {
   0% {
     opacity: 0;
     transform: translateY(-100px);
@@ -201,7 +197,6 @@ html:hover ::-webkit-scrollbar {
   }
 }
 
-/* Keyframes for fadeIn */
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -212,27 +207,25 @@ html:hover ::-webkit-scrollbar {
 }
 
 .animate-fadeInUp {
-  opacity: 0;
   animation: fadeInUp 1500ms forwards;
 }
 
 .animate-fadeInDown {
-  opacity: 0;
   animation: fadeInDown 1500ms forwards;
 }
 
 .animate-fadeIn {
-  opacity: 0;
   animation: fadeIn 1500ms forwards;
 }
 
-/* Animation classes */
 .animate-fadeInLeft {
-  opacity: 0;
   animation: fadeInLeft 1500ms forwards;
 }
 
 .animate-fadeInRight {
-  opacity: 0;
   animation: fadeInRight 1500ms forwards;
+}
+
+[data-animatable] {
+  @apply opacity-0;
 }

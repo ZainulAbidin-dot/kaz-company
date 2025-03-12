@@ -108,12 +108,15 @@ const solutions = [
 export function SolutionsSection() {
   const sectionRef = useFadeInAnimation({
     animationClass: 'animate-fadeInDown',
-    threshold: 0.5,
+    threshold: 0.25,
   });
 
   return (
-    <div ref={sectionRef} className="relative w-full px-6 py-24 md:py-32">
-      {/* Background Image */}
+    <div
+      ref={sectionRef}
+      className="relative w-full px-6 py-24 md:py-32"
+      data-animatable
+    >
       <img
         src={img}
         alt="Background"
@@ -140,7 +143,13 @@ export function SolutionsSection() {
 
           {/* Circular Layout for Desktop */}
           <div className="relative hidden justify-center md:flex">
-            <div className="relative h-[500px] min-w-[500px] rounded-full lg:w-1/2">
+            <div
+              className="relative h-[500px] min-w-[500px] animate-spin rounded-full lg:w-1/2"
+              style={{
+                animationDuration: '60s',
+                animationTimingFunction: 'linear',
+              }}
+            >
               {solutions.map((solution, index) => {
                 const CONTAINER_SIZE = 500;
                 const CIRCLE_RADIUS = 200;
@@ -157,11 +166,14 @@ export function SolutionsSection() {
                 return (
                   <div
                     key={index}
-                    className="absolute"
+                    className="absolute animate-spin"
                     style={{
                       left: `${x}px`,
                       top: `${y}px`,
                       transform: 'translate(-50%, -50%)',
+                      animationDuration: '60s',
+                      animationTimingFunction: 'linear',
+                      animationDirection: 'reverse',
                     }}
                   >
                     <SolutionItem solution={solution} />
@@ -191,12 +203,15 @@ function SolutionItem({ solution }: { solution: (typeof solutions)[number] }) {
           className="background-stripes parallax-effect-glare-scale"
           perspective={1000}
           scale={1.02}
+          glareEnable
+          glareMaxOpacity={0.45}
+          glareBorderRadius="50%"
         >
           <div className="flex h-30 w-30 items-center justify-center rounded-full bg-black transition-transform hover:scale-110">
             <img
               src={solution.image}
               alt={solution.title}
-              className="h-[60px] w-[60px] object-contain"
+              className="h-15 w-15 shrink-0 object-contain"
             />
           </div>
         </Tilt>

@@ -1,6 +1,7 @@
 import careers_img from '@/assets/images/career_img_3.jpg';
 import { Card } from '@/components/ui/card';
 import { useFadeInAnimation } from '@/hooks/use-fadein-animation';
+import { useIsMobile } from '@/hooks/use-is-mobile';
 import { cn } from '@/lib/utils';
 
 const events = [
@@ -99,16 +100,19 @@ function HistoryTimelineCard({
   event: (typeof events)[number];
   index: number;
 }) {
+  const { isMobile } = useIsMobile();
+
   const animationClass =
-    index % 2 === 0 ? 'animate-fadeInLeft' : 'animate-fadeInRight';
+    index % 2 !== 0 || isMobile ? 'animate-fadeInRight' : 'animate-fadeInLeft';
 
   const cardRef = useFadeInAnimation({
     animationClass,
     threshold: 0.5,
+    delay: 200 * index,
   });
 
   return (
-    <div className="flex-1 opacity-0 md:w-1/2" ref={cardRef}>
+    <div className="flex-1 md:w-1/2" ref={cardRef} data-animatable>
       <Card className="border border-[rgba(255,255,255,0.2)] bg-[rgba(255,255,255,0.1)] p-4 backdrop-blur-md md:p-6">
         <div className="text-white">
           <div className="mb-2 text-sm">{event.title}</div>

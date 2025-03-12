@@ -1,18 +1,20 @@
 import { useEffect, useRef } from 'react';
 
 type Options = {
-  threshold?: number;
   animationClass:
     | 'animate-fadeInLeft'
     | 'animate-fadeInRight'
     | 'animate-fadeInUp'
     | 'animate-fadeInDown'
     | 'animate-fadeIn';
+  threshold?: number;
+  delay?: number;
 };
 
 export function useFadeInAnimation({
   threshold = 0.5,
   animationClass,
+  delay = 0,
 }: Options) {
   const elementRef = useRef<HTMLDivElement>(null);
 
@@ -22,6 +24,10 @@ export function useFadeInAnimation({
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add(animationClass);
+            entry.target.classList.remove('opacity-0');
+            if (delay) {
+              (entry.target as HTMLElement).style.animationDelay = `${delay}ms`;
+            }
             observer.unobserve(entry.target);
           }
         });
@@ -39,7 +45,7 @@ export function useFadeInAnimation({
         observer.unobserve(currentRef);
       }
     };
-  }, [animationClass, threshold]);
+  }, [animationClass, threshold, delay]);
 
   return elementRef;
 }
