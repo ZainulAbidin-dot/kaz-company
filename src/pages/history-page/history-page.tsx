@@ -479,7 +479,7 @@ function HistoryTimelineCard({
   const cardRef = useFadeInAnimation({
     animationClass,
     threshold: 0.5,
-    delay: 200 * index,
+    // delay: 200 * index,
   });
 
   return (
