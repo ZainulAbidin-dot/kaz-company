@@ -207,7 +207,8 @@ const events = [
     cardSubtitle: '300+ project completion milestone',
     cardDetailedText:
       'SCL celebrated the successful completion and handover of over 300 projects.',
-  },{
+  },
+  {
     title: '2013',
     cardTitle: 'Partnership with GE Automation',
     cardSubtitle: 'Strategic partnership agreement signed',
@@ -281,8 +282,7 @@ const events = [
     title: '2016',
     cardTitle: 'Distech Controls',
     cardSubtitle: 'Sole agent for Distech controls',
-    cardDetailedText:
-      'SCL became the sole agent for Distech controls in KSA.',
+    cardDetailedText: 'SCL became the sole agent for Distech controls in KSA.',
   },
   {
     title: '2016',
@@ -412,13 +412,12 @@ const events = [
   },
 ];
 
-
 export function HistoryPage() {
   return (
     <div className="relative min-h-screen">
       <div className="pointer-events-none fixed inset-0 -z-20">
         <img src={careers_img} alt="" className="h-full w-full object-cover" />
-        <div className="absolute inset-0 h-full w-full bg-black opacity-75" />
+        <div className="absolute inset-0 h-full w-full bg-black opacity-50" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-4">

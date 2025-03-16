@@ -20,13 +20,13 @@ export const Navbar = React.forwardRef<HTMLDivElement, NavbarProps>(
       <header
         ref={navbarRef}
         className={cn(
-          'text-muted-foreground bg-neutral-950/95 shadow',
+          'text-muted-foreground bg-neutral-900/95 shadow',
           'text-sm font-medium',
           'w-full',
           'relative',
           'isolate z-50',
           pastThreshold
-            ? 'fixed top-0 left-0 bg-neutral-950/80 backdrop-blur'
+            ? 'fixed top-0 left-0 bg-neutral-950/75 backdrop-blur'
             : ''
         )}
         style={{

@@ -15,7 +15,7 @@ export function HeroSection() {
         muted
         className="absolute inset-0 h-full w-full object-cover"
       />
-      <div className="absolute inset-0 bg-black/50" />
+      <div className="absolute inset-0 bg-black/40" />
       <div className="relative z-10 container mx-auto flex h-full flex-col items-center justify-center px-4 text-white">
         <h1 className="mb-4 text-center text-4xl font-bold md:text-6xl">
           The Foremost Engineering and System Integration Company
