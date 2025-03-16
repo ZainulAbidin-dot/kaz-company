@@ -1,3 +1,5 @@
+import Tilt from 'react-parallax-tilt';
+
 import aboutImage from '@/assets/images/Engr_Abdulrahman_A_Z_Alshathry.png';
 import { Wrapper } from '@/components/ui/wrapper';
 import { useFadeInAnimation } from '@/hooks/use-fadein-animation';
@@ -5,14 +7,21 @@ import { useFadeInAnimation } from '@/hooks/use-fadein-animation';
 export function AboutSection() {
   const sectionRef = useFadeInAnimation({
     animationClass: 'animate-fadeInLeft',
-    threshold: 0.5,
+    threshold: 0.25,
   });
 
   return (
-    <section ref={sectionRef} className="py-20">
+    <section ref={sectionRef} className="py-20" data-animatable>
       <Wrapper>
         <div className="flex flex-col items-center gap-12 lg:flex-row">
-          <div className="space-y-6 px-2 py-6 shadow-xl lg:w-1/2">
+          <Tilt
+            className="background-stripes parallax-effect-glare-scale space-y-6 px-2 py-6 shadow-xl lg:w-1/2"
+            perspective={1000}
+            scale={1.02}
+            glareEnable
+            glareMaxOpacity={0.45}
+            glareBorderRadius="50%"
+          >
             <img
               src={aboutImage}
               alt="Engr. Abdulrahman A. Z. Alshathry"
@@ -28,7 +37,7 @@ export function AboutSection() {
                 deliver the best solutions for our clients."
               </blockquote>
             </div>
-          </div>
+          </Tilt>
           <div className="space-y-6 lg:w-1/2">
             <h2 className="text-4xl font-bold text-gray-900">Overview</h2>
             <p className="text-lg text-gray-600">

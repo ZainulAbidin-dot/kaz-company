@@ -34,12 +34,12 @@ const operationsMaintenance = [
 
 export function OperationAndMaintenanceSection() {
   const ref = useFadeInAnimation({
-    animationClass: 'animate-fadeInUp',
+    animationClass: 'animate-fadeInDown',
     threshold: 0.25,
   });
 
   return (
-    <section className="py-20" ref={ref}>
+    <section className="py-20" ref={ref} data-animatable>
       <Wrapper>
         <div className="flex flex-col items-center justify-between gap-8">
           <h2 className="text-center text-3xl font-bold sm:text-4xl md:text-left md:text-5xl">
