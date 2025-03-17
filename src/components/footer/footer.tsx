@@ -1,10 +1,12 @@
+import scImage from '@/assets/images/SC.png';
+
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
   const quickLinks = [
-    { href: '#about', label: 'About Us' },
-    { href: '#services', label: 'Services' },
-    { href: '#contact', label: 'Contact' },
+    { href: '/about', label: 'About Us' },
+    { href: '/solution', label: 'Solutions' },
+    { href: '/history', label: 'History' },
     { href: '#careers', label: 'Careers' },
   ];
 
@@ -15,12 +17,13 @@ export function Footer() {
   ];
 
   return (
-    <footer className="bg-neutral-950 pt-16 pb-8 text-white">
+    <footer className="bg-gradient-to-r from-neutral-800 to-neutral-950 pt-16 pb-8 text-white">
       <div className="container mx-auto grid grid-cols-1 gap-8 px-4 md:grid-cols-3">
         {/* Company Info */}
-        <div>
-          <h3 className="text-xl font-bold">Company Name</h3>
-          <p className="mt-2 text-neutral-400">
+        <div className="group">
+          <img src={scImage} alt="" className="h-32 group-hover:animate-pulse" />
+          <h3 className="text-xl font-bold group-hover:animate-pulse">Saudi Controls</h3>
+          <p className="mt-2 text-neutral-400 group-hover:animate-pulse">
             Delivering innovative solutions for a smarter future.
           </p>
         </div>
@@ -58,7 +61,7 @@ export function Footer() {
       {/* Copyright */}
       <div className="mt-8 border-t border-neutral-700 pt-4 text-center">
         <p className="text-neutral-400">
-          © {currentYear} Company Name. All rights reserved.
+          © {currentYear} Saudi Controls. All rights reserved.
         </p>
       </div>
     </footer>
