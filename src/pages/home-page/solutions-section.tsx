@@ -92,19 +92,19 @@ const solutions = [
       'Public Address System',
     ],
   },
-  {
-    image: st7,
-    title: 'Services',
-    details: [
-      'Engineering',
-      'Design',
-      'Installation',
-      'Commissioning',
-      'Maintenance',
-      'Training',
-      'Consulting',
-    ],
-  },
+  // {
+  //   image: st7,
+  //   title: 'Services',
+  //   details: [
+  //     'Engineering',
+  //     'Design',
+  //     'Installation',
+  //     'Commissioning',
+  //     'Maintenance',
+  //     'Training',
+  //     'Consulting',
+  //   ],
+  // },
 ];
 
 export function SolutionsSection() {
@@ -133,13 +133,10 @@ export function SolutionsSection() {
               Solution & Technologies
             </h1>
             <p className="text-lg leading-relaxed text-gray-600">
-              Saudi Controls specializes in personalized solutions that
-              encompass a wide range of high-tech fields, from building systems
-              to the industrial sector, from communications to security. Our
-              decades of experience on the cusp of the latest technologies and
-              our extensive network of experts allow us to provide full-fledged
-              products and services across the entire spectrum of modern
-              technological needs.
+              Saudi Controls specializes in tailored high-tech solutions, spanning building automation, industrial systems, communications, and security.
+            </p>
+            <p className="my-2 text-lg leading-relaxed text-gray-600">              
+              From intelligent building management to advanced security systems, our expertise ensures seamless integration, reliability, and future-ready innovations for our clients. 
             </p>
           </div>
 
