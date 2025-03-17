@@ -51,7 +51,6 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
       <main
         className="flex-grow"
         style={{
-          paddingTop: pastThreshold ? `${NAV_HEIGHT_IN_PX}px` : '0',
         }}
       >
         {children}

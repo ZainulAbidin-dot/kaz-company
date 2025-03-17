@@ -14,7 +14,7 @@ export function AboutPage() {
   return (
     <section ref={sectionRef} className="py-20" data-animatable>
       <Wrapper>
-        <div className="flex flex-col items-center gap-12 lg:flex-row">
+        <div className="flex flex-col items-center mt-12 gap-12 lg:flex-row">
           <div
             className="background-stripes space-y-6 px-2 py-6 lg:w-1/2"
           >
@@ -39,7 +39,7 @@ export function AboutPage() {
           </div>
         </div>
         
-        <div className="mt-26 flex flex-col items-center gap-12 lg:flex-row">
+        <div className="mt-16 flex flex-col items-center gap-12 lg:flex-row">
             <div className="space-y-6 lg:w-1/2">
                 <h2 className="text-3xl font-bold lg:text-5xl text-gray-900">Our Promise</h2>
                 <p className="text-lg text-gray-600">

@@ -23,11 +23,11 @@ export const Navbar = React.forwardRef<HTMLDivElement, NavbarProps>(
           'text-muted-foreground bg-neutral-900/75 backdrop-blur',
           'text-sm font-medium',
           'w-full',
-          'relative',
-          'fixed z-50',
+          'fixed top-0 left-0 z-50',
+          'transition duration-500',
           pastThreshold
-            ? `fixed top-0 left-0 bg-neutral-950/75 backdrop-blur ${isMobile ? 'opacity-100' : 'opacity-0'}  hover:opacity-100 transition duration-500`
-            : ''
+            ? `bg-neutral-950/75 backdrop-blur ${isMobile ? 'opacity-100' : 'opacity-0'} hover:opacity-100`
+            : ''
         )}
         style={{
           height: `${navHeightInPx}px`,
