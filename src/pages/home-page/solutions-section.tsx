@@ -204,7 +204,7 @@ function SolutionItem({ solution }: { solution: (typeof solutions)[number] }) {
     <Popover open={isHovered}>
       <PopoverTrigger>
         <Tilt
-          className="background-stripes parallax-effect-glare-scale"
+          className="background-stripes parallax-effect-glare-scale cursor-pointer"
           perspective={1000}
           scale={1.02}
           glareEnable
