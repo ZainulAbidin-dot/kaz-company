@@ -1,3 +1,5 @@
+import React from 'react';
+
 import Tilt from 'react-parallax-tilt';
 
 import img from '@/assets/images/bg2.webp';
@@ -197,9 +199,10 @@ export function SolutionsSection() {
 }
 
 function SolutionItem({ solution }: { solution: (typeof solutions)[number] }) {
+  const [isHovered, setIsHovered] = React.useState(false);
   return (
-    <Popover>
-      <PopoverTrigger asChild>
+    <Popover open={isHovered}>
+      <PopoverTrigger>
         <Tilt
           className="background-stripes parallax-effect-glare-scale"
           perspective={1000}
@@ -207,13 +210,15 @@ function SolutionItem({ solution }: { solution: (typeof solutions)[number] }) {
           glareEnable
           glareMaxOpacity={0.45}
           glareBorderRadius="50%"
+          onEnter={() => setIsHovered(true)}
+          onLeave={() => setIsHovered(false)}
         >
           <div className="flex h-30 w-30 items-center justify-center rounded-full bg-black transition-transform hover:scale-110">
-        <img
-          src={solution.image}
-          alt={solution.title}
-          className="h-15 w-15 shrink-0 object-contain"
-        />
+            <img
+              src={solution.image}
+              alt={solution.title}
+              className="h-15 w-15 shrink-0 object-contain"
+            />
           </div>
         </Tilt>
       </PopoverTrigger>

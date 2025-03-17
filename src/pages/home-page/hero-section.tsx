@@ -2,12 +2,7 @@ import video from '@/assets/video/design.mp4';
 
 export function HeroSection() {
   return (
-    <section
-      className="relative"
-      style={{
-        height: `100vh`,
-      }}
-    >
+    <section className="relative h-screen">
       <video
         src={video}
         autoPlay

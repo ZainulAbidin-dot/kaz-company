@@ -27,7 +27,7 @@ export const Navbar = React.forwardRef<HTMLDivElement, NavbarProps>(
           'transition duration-500',
           pastThreshold
             ? `bg-neutral-950/75 backdrop-blur ${isMobile ? 'opacity-100' : 'opacity-0'} hover:opacity-100`
-            : ''
+            : ''
         )}
         style={{
           height: `${navHeightInPx}px`,

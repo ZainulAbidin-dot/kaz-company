@@ -41,11 +41,11 @@ export function OperationAndMaintenanceSection() {
   return (
     <section className="py-20" ref={ref} data-animatable>
       <Wrapper>
-        <div className="flex flex-col items-center justify-between gap-8">
-          <h2 className="text-center text-3xl font-bold sm:text-4xl md:text-left md:text-5xl">
+        <div className="items-left flex flex-col justify-between gap-8 md:text-center">
+          <h2 className="text-center text-3xl font-bold sm:text-4xl md:text-5xl">
             Operation & Maintenance
           </h2>
-          <p className="text-muted-foreground text-center text-lg md:text-left">
+          <p className="text-muted-foreground text-lg">
             The ability to integrate operations and maintenance constraints from
             the design stage is key to guaranteeing that the system is
             functional and maintained in line with budget forecasts throughout
@@ -70,7 +70,9 @@ export function OperationAndMaintenanceSection() {
                   />
                 </CardHeader>
                 <CardContent>
-                  <CardTitle className="mb-4 text-2xl">{item.title}</CardTitle>
+                  <CardTitle className="mb-4 text-center text-2xl">
+                    {item.title}
+                  </CardTitle>
                   <CardDescription>{item.description}</CardDescription>
                 </CardContent>
               </Card>

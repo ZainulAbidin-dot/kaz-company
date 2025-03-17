@@ -206,6 +206,23 @@ html:hover ::-webkit-scrollbar {
   }
 }
 
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
+
+.animate-marquee-reverse {
+  animation: marquee 25s linear infinite reverse;
+}
+
 .animate-fadeInUp {
   animation: fadeInUp 1500ms forwards;
 }
