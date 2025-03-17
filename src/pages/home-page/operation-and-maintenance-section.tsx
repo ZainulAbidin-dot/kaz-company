@@ -1,3 +1,5 @@
+import Tilt from 'react-parallax-tilt';
+
 import om1 from '@/assets/images/om1.png';
 import om2 from '@/assets/images/om2.png';
 import om3 from '@/assets/images/om3.png';
@@ -57,25 +59,34 @@ export function OperationAndMaintenanceSection() {
 
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
             {operationsMaintenance.map((item, index) => (
-              <Card key={index} className="">
-                <CardHeader>
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="mx-auto h-32 w-32 drop-shadow-md"
-                    style={{
-                      filter: 'brightness(0.5) contrast(1.2)',
-                      mixBlendMode: 'multiply',
-                    }}
-                  />
-                </CardHeader>
-                <CardContent>
-                  <CardTitle className="mb-4 text-center text-2xl">
-                    {item.title}
-                  </CardTitle>
-                  <CardDescription>{item.description}</CardDescription>
-                </CardContent>
-              </Card>
+              <Tilt
+                className="background-stripes parallax-effect-glare-scale cursor-pointer"
+                perspective={1000}
+                scale={1.02}
+                glareEnable
+                glareMaxOpacity={0.45}
+                glareBorderRadius="50%"
+              >
+                <Card key={index}>
+                  <CardHeader>
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="mx-auto h-32 w-32 drop-shadow-md"
+                      style={{
+                        filter: 'brightness(0.5) contrast(1.2)',
+                        mixBlendMode: 'multiply',
+                      }}
+                    />
+                  </CardHeader>
+                  <CardContent>
+                    <CardTitle className="mb-4 text-center text-2xl">
+                      {item.title}
+                    </CardTitle>
+                    <CardDescription>{item.description}</CardDescription>
+                  </CardContent>
+                </Card>
+              </Tilt>
             ))}
           </div>
         </div>
