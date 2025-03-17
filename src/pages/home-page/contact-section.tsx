@@ -79,20 +79,20 @@ function ContactInfo() {
             <h3 className="text-lg font-semibold text-neutral-900">
               Call us anytime
             </h3>
-            <span className="text-lg text-neutral-600">+123 456 7890</span>
+            <span className="text-lg text-neutral-600">+966 (11) 480 3338</span>
           </div>
         </a>
 
         <a
           className="flex items-center gap-4 rounded-lg px-4 py-2 transition-colors hover:bg-neutral-50"
-          href="mailto:info@example.com"
+          href="mailto:info@saudicontrols.com"
         >
           <div className="inline-flex size-14 items-center justify-center rounded-full bg-neutral-50 p-4">
             <MailPlusIcon className="text-neutral-600" />
           </div>
           <div className="flex flex-col">
             <h3 className="text-lg font-semibold text-neutral-900">Email us</h3>
-            <span className="text-lg text-neutral-600">info@example.com</span>
+            <span className="text-lg text-neutral-600">info@saudicontrols.com</span>
           </div>
         </a>
 

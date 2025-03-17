@@ -33,20 +33,20 @@ const navLinks = [
     icon: ClockIcon,
   },
   {
-    title: 'Products',
-    href: '/products',
+    title: 'Solutions',
+    href: '/solutions',
     icon: ShoppingCartIcon,
   },
-  {
-    title: 'Contact',
-    href: '/contact',
-    icon: MailIcon,
-  },
-  {
-    title: 'Careers',
-    href: '/careers',
-    icon: UsersIcon,
-  },
+  // {
+  //   title: 'Contact',
+  //   href: '/contact',
+  //   icon: MailIcon,
+  // },
+  // {
+  //   title: 'Careers',
+  //   href: '/careers',
+  //   icon: UsersIcon,
+  // },
 ];
 
 export function DesktopNavLinks() {

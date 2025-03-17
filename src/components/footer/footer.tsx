@@ -9,9 +9,9 @@ export function Footer() {
   ];
 
   const contactInfo = [
-    { type: 'Email', value: 'contact@company.com' },
-    { type: 'Phone', value: '+123 456 7890' },
-    { type: 'Location', value: '123 Business Street, City' },
+    { type: 'Email', value: 'info@saudicontrols.com' },
+    { type: 'Phone', value: '+966 (11) 480 3338' },
+    { type: 'Location', value: '5682 Umm Al Hamam Al Sharqi, Riyadh 12321' },
   ];
 
   return (

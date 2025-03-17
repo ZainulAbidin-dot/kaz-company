@@ -444,7 +444,7 @@ function HistoryTimeline() {
         >
           <div
             className={cn(
-              'relative h-6 w-6 flex-shrink-0 rounded-full bg-black',
+              'relative h-6 w-6 flex-shrink-0 rounded-full border-5 border-black bg-white',
               'translate-x-1/4 md:translate-x-0',
               index % 2 === 0
                 ? 'md:left-1/2 md:-translate-x-1/2'
@@ -483,8 +483,8 @@ function HistoryTimelineCard({
 
   return (
     <div className="flex-1 md:w-1/2" ref={cardRef} data-animatable>
-      <Card className="border border-[rgba(255,255,255,0.2)] bg-[rgba(255,255,255,0.1)] p-4 backdrop-blur-md md:p-6">
-        <div className="text-white">
+      <Card className="border border-[rgba(255,255,255,0.2)] bg-white p-4 backdrop-blur-md md:p-6">
+        <div className="text-black">
           <div className="mb-2 text-sm">{event.title}</div>
           <h3 className="mb-2 text-xl font-bold">{event.cardTitle}</h3>
           <h4 className="mb-2 text-lg">{event.cardSubtitle}</h4>

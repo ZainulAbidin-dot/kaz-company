@@ -14,19 +14,24 @@ export function AboutSection() {
     <section ref={sectionRef} className="py-20" data-animatable>
       <Wrapper>
         <div className="flex flex-col items-center gap-12 lg:flex-row">
-          <Tilt
+          <div
             className="background-stripes parallax-effect-glare-scale space-y-6 px-2 py-6 shadow-xl lg:w-1/2"
+          >
+          <Tilt
+            className="parallax-effect-glare-scale "
             perspective={1000}
             scale={1.02}
             glareEnable
             glareMaxOpacity={0.45}
             glareBorderRadius="50%"
           >
+
             <img
               src={aboutImage}
               alt="Engr. Abdulrahman A. Z. Alshathry"
               className="aspect-video w-full rounded-lg object-cover"
             />
+            </Tilt>
             <div className="text-center">
               <h3 className="text-2xl font-bold text-gray-900">
                 Engr. Abdulrahman A. Z. Alshathry
@@ -37,9 +42,9 @@ export function AboutSection() {
                 deliver the best solutions for our clients."
               </blockquote>
             </div>
-          </Tilt>
+          </div>
           <div className="space-y-6 lg:w-1/2">
-            <h2 className="text-4xl font-bold text-gray-900">Overview</h2>
+            <h2 className="text-3xl font-bold lg:text-5xl text-gray-900">Overview</h2>
             <p className="text-lg text-gray-600">
               Currently undergoing exponential growth, Saudi Controls has
               branched out from its head office in Riyadh to every corner of the

@@ -127,7 +127,7 @@ export function SolutionsSection() {
         <div className="relative z-10 flex flex-col items-center gap-12 lg:flex-row lg:justify-between">
           {/* Title & Description */}
           <div className="mx-auto mb-12 lg:w-1/2">
-            <h1 className="mb-6 text-center text-3xl font-bold text-gray-900 sm:text-4xl md:text-5xl">
+            <h1 className="mb-6 text-3xl font-bold text-gray-900 sm:text-4xl md:text-5xl">
               Solution & Technologies
             </h1>
             <p className="text-lg leading-relaxed text-gray-600">
@@ -199,7 +199,7 @@ export function SolutionsSection() {
 function SolutionItem({ solution }: { solution: (typeof solutions)[number] }) {
   return (
     <Popover>
-      <PopoverTrigger>
+      <PopoverTrigger asChild>
         <Tilt
           className="background-stripes parallax-effect-glare-scale"
           perspective={1000}
@@ -209,11 +209,11 @@ function SolutionItem({ solution }: { solution: (typeof solutions)[number] }) {
           glareBorderRadius="50%"
         >
           <div className="flex h-30 w-30 items-center justify-center rounded-full bg-black transition-transform hover:scale-110">
-            <img
-              src={solution.image}
-              alt={solution.title}
-              className="h-15 w-15 shrink-0 object-contain"
-            />
+        <img
+          src={solution.image}
+          alt={solution.title}
+          className="h-15 w-15 shrink-0 object-contain"
+        />
           </div>
         </Tilt>
       </PopoverTrigger>
