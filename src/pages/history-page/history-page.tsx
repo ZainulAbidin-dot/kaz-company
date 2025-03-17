@@ -421,7 +421,7 @@ export function HistoryPage() {
       </div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-4">
-        <h1 className="my-8 text-center !text-3xl font-bold text-white md:!text-5xl">
+        <h1 className="my-8 mt-30 text-center !text-3xl font-bold text-white md:!text-5xl">
           Saudi Controls History
         </h1>
         <HistoryTimeline />
