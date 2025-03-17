@@ -3,11 +3,9 @@ import React, { useState } from 'react';
 import {
   ClockIcon,
   HomeIcon,
-  InfoIcon,
   MailIcon,
   MenuIcon,
-  ShoppingCartIcon,
-  UsersIcon,
+  Settings,
   XIcon,
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -25,7 +23,7 @@ const navLinks = [
   {
     title: 'About',
     href: '/about',
-    icon: InfoIcon,
+    icon: MailIcon,
   },
   {
     title: 'History',
@@ -35,7 +33,7 @@ const navLinks = [
   {
     title: 'Solutions',
     href: '/solutions',
-    icon: ShoppingCartIcon,
+    icon: Settings,
   },
   // {
   //   title: 'Contact',
