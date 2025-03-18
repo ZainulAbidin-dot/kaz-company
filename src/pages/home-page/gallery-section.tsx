@@ -15,7 +15,7 @@ const galleryData: ImageItem[] = [
     id: '1',
     src: p1,
     alt: 'Mountain landscape',
-    title: 'Alpine Majesty',
+    title: 'Al Qassim National Hospital',
     description:
       'Towering peaks pierce through misty clouds in this dramatic mountain landscape.',
   },
@@ -23,7 +23,7 @@ const galleryData: ImageItem[] = [
     id: '2',
     src: p2,
     alt: 'Modern architecture',
-    title: 'Urban Symmetry',
+    title: 'Saudi German Hospital',
     description:
       'Glass and steel create mesmerizing patterns in modern architectural design.',
   },
@@ -31,21 +31,21 @@ const galleryData: ImageItem[] = [
     id: '3',
     src: p3,
     alt: 'Waterfall',
-    title: "Nature's Power",
+    title: "Kingdom Hospital",
     description: 'A majestic waterfall cascades through lush green forest.',
   },
   {
     id: '4',
     src: p4,
     alt: 'Mountain sunset',
-    title: 'Golden Hour',
+    title: 'King Fahad Specialist Hospital - Dammam',
     description: 'Warm sunlight bathes the landscape in ethereal golden tones.',
   },
   {
     id: '5',
     src: p5,
     alt: 'Urban night',
-    title: 'City Lights',
+    title: 'Saudi Aramco Lab R & D',
     description:
       'The urban landscape comes alive with countless twinkling lights.',
   },
@@ -53,7 +53,7 @@ const galleryData: ImageItem[] = [
     id: '6',
     src: p6,
     alt: 'Nature landscape',
-    title: 'Serene Waters',
+    title: 'Kingdom Tower',
     description:
       'A pristine lake reflects the surrounding landscape like a mirror.',
   },
@@ -61,7 +61,7 @@ const galleryData: ImageItem[] = [
     id: '7',
     src: p9,
     alt: 'Nature landscape',
-    title: 'Serene Waters',
+    title: 'King Fahad Airbase - Taif',
     description:
       'A pristine lake reflects the surrounding landscape like a mirror.',
   },
@@ -70,7 +70,7 @@ const galleryData: ImageItem[] = [
     id: '8',
     src: p8,
     alt: 'Nature landscape',
-    title: 'Serene Waters',
+    title: 'Faisaliya Tower',
     description:
       'A pristine lake reflects the surrounding landscape like a mirror.',
   },
