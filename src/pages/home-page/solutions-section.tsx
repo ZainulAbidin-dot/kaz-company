@@ -134,7 +134,7 @@ export function SolutionsSection() {
             <p className="text-lg leading-relaxed text-gray-600">
               Saudi Controls specializes in tailored high-tech solutions, spanning building automation, industrial systems, communications, and security.
             </p>
-            <p className="my-2 text-lg leading-relaxed text-gray-600">              
+            <p className="my-6 text-lg leading-relaxed text-gray-600">              
               From intelligent building management to advanced security systems, our expertise ensures seamless integration, reliability, and future-ready innovations for our clients. 
             </p>
           </div>

@@ -1,13 +1,13 @@
-import scImage from '@/assets/images/SC.png';
+import scImage from '@/assets/images/symbol.png';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
   const quickLinks = [
+    { href: '/', label: 'Home' },
     { href: '/about', label: 'About Us' },
     { href: '/solution', label: 'Solutions' },
     { href: '/history', label: 'History' },
-    { href: '#careers', label: 'Careers' },
   ];
 
   const contactInfo = [
@@ -21,8 +21,8 @@ export function Footer() {
       <div className="container mx-auto grid grid-cols-1 gap-8 px-4 md:grid-cols-3">
         {/* Company Info */}
         <div className="group">
-          <img src={scImage} alt="" className="h-32" />
-          <h3 className="text-xl font-bold group-hover:animate-pulse">Saudi Controls</h3>
+          <img src={scImage} alt="" className="h-22 mb-2" />
+          <h3 className="text-xl font-bold group-hover:animate-pulse">Saudi Controls Ltd.</h3>
           <p className="mt-2 text-neutral-400 group-hover:animate-pulse">
             Delivering innovative solutions for a smarter future.
           </p>

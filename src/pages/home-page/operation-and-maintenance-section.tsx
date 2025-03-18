@@ -43,7 +43,7 @@ export function OperationAndMaintenanceSection() {
   return (
     <section className="py-20" ref={ref} data-animatable>
       <Wrapper>
-        <div className="items-left flex flex-col justify-between gap-8 md:text-center">
+        <div className="items-left flex flex-col justify-between gap-8 lg:text-center md:text-center">
           <h2 className="text-center text-3xl font-bold sm:text-4xl md:text-5xl">
             Operation & Maintenance
           </h2>
