@@ -9,7 +9,6 @@ import st3 from '@/assets/images/st3.png';
 import st4 from '@/assets/images/st4.png';
 import st5 from '@/assets/images/st5.png';
 import st6 from '@/assets/images/st6.png';
-import st7 from '@/assets/images/st7.png';
 import {
   Popover,
   PopoverContent,
