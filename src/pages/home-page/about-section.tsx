@@ -44,28 +44,15 @@ export function AboutSection() {
             </div>
           </div>
           <div className="space-y-6 lg:w-1/2">
-            <h2 className="text-3xl font-bold lg:text-5xl text-gray-900">Overview</h2>
+            <h2 className="text-3xl font-bold lg:text-5xl text-gray-900">Where Vision Meets Precision</h2>
             <p className="text-lg text-gray-600">
-              Currently undergoing exponential growth, Saudi Controls has
-              branched out from its head office in Riyadh to every corner of the
-              kingdom, providing tailor-made technical solutions utilizing state
-              of the art innovations in various fields of civil and security
-              systems to an ever expanding client base with which we share a
-              long-term relationship built on trust and reliability.
+              For over three decades, Saudi Controls has redefined the engineering frontier of Saudi Arabia. From our deep roots in Riyadh to the farthest horizons of the Kingdom, we forge bespoke, cutting-edge solutions where trust, mastery, and innovation converge. The future is not a destination—it’s our legacy in motion. We transform challenges into milestones, crafting smarter cities, safer communities, and sustainable progress. 
             </p>
             <p className="text-lg text-gray-600">
-              Saudi Controls Ltd. is one of the foremost engineering and systems
-              integration companies in Saudi Arabia, a longtime trendsetter in
-              the field with an established reputation for multidisciplinary
-              expertise and competitive prices going back 30 years.
+              Join us as we ignite tomorrow, empowering visionary ideas with unwavering trust and relentless expertise.
             </p>
             <p className="text-lg text-gray-600">
-              Currently undergoing exponential growth, Saudi Controls has
-              branched out from its head office in Riyadh to every corner of the
-              kingdom, providing tailor-made technical solutions utilizing state
-              of the art innovations in various fields of civil and security
-              systems to an ever expanding client base with which we share a
-              long-term relationship built on trust and reliability.
+              Empowering Vision. Engineered by Trust.
             </p>
           </div>
         </div>
