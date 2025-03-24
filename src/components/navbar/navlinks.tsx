@@ -35,16 +35,6 @@ const navLinks = [
     href: '/solutions',
     icon: Settings,
   },
-  // {
-  //   title: 'Contact',
-  //   href: '/contact',
-  //   icon: MailIcon,
-  // },
-  // {
-  //   title: 'Careers',
-  //   href: '/careers',
-  //   icon: UsersIcon,
-  // },
 ];
 
 export function DesktopNavLinks() {

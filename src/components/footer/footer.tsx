@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import scImage from '@/assets/images/symbol.png';
 
 export function Footer() {
@@ -6,7 +8,7 @@ export function Footer() {
   const quickLinks = [
     { href: '/', label: 'Home' },
     { href: '/about', label: 'About Us' },
-    { href: '/solution', label: 'Solutions' },
+    { href: '/solutions', label: 'Solutions' },
     { href: '/history', label: 'History' },
   ];
 
@@ -21,8 +23,10 @@ export function Footer() {
       <div className="container mx-auto grid grid-cols-1 gap-8 px-4 md:grid-cols-3">
         {/* Company Info */}
         <div className="group">
-          <img src={scImage} alt="" className="h-22 mb-2" />
-          <h3 className="text-xl font-bold group-hover:animate-pulse">Saudi Controls Ltd.</h3>
+          <img src={scImage} alt="" className="mb-2 h-22" />
+          <h3 className="text-xl font-bold group-hover:animate-pulse">
+            Saudi Controls Ltd.
+          </h3>
           <p className="mt-2 text-neutral-400 group-hover:animate-pulse">
             Delivering innovative solutions for a smarter future.
           </p>
@@ -34,12 +38,12 @@ export function Footer() {
           <ul className="mt-2 space-y-2">
             {quickLinks.map((link, index) => (
               <li key={index}>
-                <a
-                  href={link.href}
+                <Link
+                  to={link.href}
                   className="text-neutral-400 hover:text-white"
                 >
                   {link.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
