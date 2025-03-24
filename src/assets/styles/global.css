@@ -5,6 +5,10 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
+  --level-one: translateZ(3rem);
+  --level-two: translateZ(6rem);
+  --level-three: translateZ(9rem);
+  
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
@@ -245,4 +249,45 @@ html:hover ::-webkit-scrollbar {
 
 [data-animatable] {
   @apply opacity-0;
+}
+
+.perspective {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.card__z {
+  transform: var(translateZ(9rem));
+}
+
+.text-filled-animation {
+  text-align: left;
+  color: white;
+  background: url('https://infinitefoundry.com/static/assets/img/bg.svg');
+  background-size: auto 452%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 36.08s linear infinite;
+  line-height: 1.2em;
+}
+
+@keyframes shine {
+  0% {
+    background-position: center 0;
+  }
+  100% {
+    background-position: center 452%;
+  }
 }

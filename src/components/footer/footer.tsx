@@ -22,8 +22,8 @@ export function Footer() {
         {/* Company Info */}
         <div className="group">
           <img src={scImage} alt="" className="h-22 mb-2" />
-          <h3 className="text-xl font-bold group-hover:animate-pulse">Saudi Controls Ltd.</h3>
-          <p className="mt-2 text-neutral-400 group-hover:animate-pulse">
+          <h3 className="text-5xl font-bold text-filled-animation">Saudi Controls Ltd.</h3>
+          <p className="mt-2 text-neutral-400 ">
             Delivering innovative solutions for a smarter future.
           </p>
         </div>

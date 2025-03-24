@@ -57,7 +57,7 @@ export function AboutSection() {
               Saudi Controls Ltd. is one of the foremost engineering and systems
               integration companies in Saudi Arabia, a longtime trendsetter in
               the field with an established reputation for multidisciplinary
-              expertise and competitive prices going back 25 years.
+              expertise and competitive prices going back 30 years.
             </p>
             <p className="text-lg text-gray-600">
               Currently undergoing exponential growth, Saudi Controls has

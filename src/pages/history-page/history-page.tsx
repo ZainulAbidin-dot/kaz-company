@@ -434,7 +434,7 @@ function HistoryTimeline() {
   return (
     <div className="relative">
       <div className="absolute top-0 bottom-0 left-4 w-1 bg-black md:left-1/2 md:-translate-x-1/2" />
-      {events.map((event, index) => (
+      {[...events].reverse().map((event, index) => (
         <div
           key={index}
           className={cn(

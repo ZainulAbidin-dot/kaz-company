@@ -25,21 +25,21 @@ const galleryData: ImageItem[] = [
     alt: 'Modern architecture',
     title: 'Saudi German Hospital',
     description:
-      'Glass and steel create mesmerizing patterns in modern architectural design.',
+      '',
   },
   {
     id: '3',
     src: p3,
     alt: 'Waterfall',
     title: "Kingdom Hospital",
-    description: 'A majestic waterfall cascades through lush green forest.',
+    description: '',
   },
   {
     id: '4',
     src: p4,
     alt: 'Mountain sunset',
     title: 'King Fahad Specialist Hospital - Dammam',
-    description: 'Warm sunlight bathes the landscape in ethereal golden tones.',
+    description: '',
   },
   {
     id: '5',
@@ -47,7 +47,7 @@ const galleryData: ImageItem[] = [
     alt: 'Urban night',
     title: 'Saudi Aramco Lab R & D',
     description:
-      'The urban landscape comes alive with countless twinkling lights.',
+      '',
   },
   {
     id: '6',
@@ -55,7 +55,7 @@ const galleryData: ImageItem[] = [
     alt: 'Nature landscape',
     title: 'Kingdom Tower',
     description:
-      'A pristine lake reflects the surrounding landscape like a mirror.',
+      '',
   },
   {
     id: '7',
@@ -63,7 +63,7 @@ const galleryData: ImageItem[] = [
     alt: 'Nature landscape',
     title: 'King Fahad Airbase - Taif',
     description:
-      'A pristine lake reflects the surrounding landscape like a mirror.',
+      '',
   },
 
   {
@@ -72,7 +72,7 @@ const galleryData: ImageItem[] = [
     alt: 'Nature landscape',
     title: 'Faisaliya Tower',
     description:
-      'A pristine lake reflects the surrounding landscape like a mirror.',
+      '',
   },
 ];
 

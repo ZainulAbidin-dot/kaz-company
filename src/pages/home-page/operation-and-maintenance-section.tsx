@@ -1,25 +1,10 @@
-import Tilt from 'react-parallax-tilt';
-
 import om1 from '@/assets/images/om1.png';
 import om2 from '@/assets/images/om2.png';
 import om3 from '@/assets/images/om3.png';
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card';
 import { Wrapper } from '@/components/ui/wrapper';
 import { useFadeInAnimation } from '@/hooks/use-fadein-animation';
 
 const operationsMaintenance = [
-  {
-    image: om1,
-    title: 'Parking Systems',
-    description:
-      'We design and implement advanced parking solutions, including automated ticketing, space optimization, and real-time availability tracking to enhance efficiency and user experience.',
-  },
   {
     image: om2,
     title: 'Transportation Systems',
@@ -32,6 +17,31 @@ const operationsMaintenance = [
     description:
       'We offer state-of-the-art building management systems that optimize energy consumption, automate security controls, and provide real-time monitoring for improved operational efficiency.',
   },
+  {
+    image: om1,
+    title: 'EV',
+    description:
+      'We design and implement advanced EV solutions, including automated charging station, space optimization, and real-time availability tracking to enhance efficiency and user experience.',
+  },
+  {
+    image: om1,
+    title: 'IoT',
+    description:
+      'We design and implement advanced EV solutions, including automated charging station, space optimization, and real-time availability tracking to enhance efficiency and user experience.',
+  },
+  {
+    image: om1,
+    title: 'Communication Systems',
+    description:
+      'We design and implement advanced parking solutions, including automated ticketing, space optimization, and real-time availability tracking to enhance efficiency and user experience.',
+  },
+  {
+    image: om1,
+    title: 'Digital Twinning',
+    description:
+      'We design and implement advanced parking solutions, including automated ticketing, space optimization, and real-time availability tracking to enhance efficiency and user experience.',
+  },
+
 ];
 
 export function OperationAndMaintenanceSection() {
@@ -56,37 +66,32 @@ export function OperationAndMaintenanceSection() {
             sometimes goes beyond its role of engineering and project management
             and operates and maintains the following systems infrastructures:
           </p>
-
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {operationsMaintenance.map((item, index) => (
-              <Tilt
-                className="background-stripes parallax-effect-glare-scale cursor-pointer"
-                perspective={1000}
-                scale={1.02}
-                glareEnable
-                glareMaxOpacity={0.45}
-                glareBorderRadius="50%"
-              >
-                <Card key={index}>
-                  <CardHeader>
+              <div key={index} className="group perspective">
+                <div className="relative w-full h-[400px] transform-style-3d transition-transform duration-1500 group-hover:rotate-y-180">
+                  {/* Front Side */}
+                  <div className="absolute inset-0 flex flex-col items-center justify-center bg-white text-gray-900 p-6 rounded-lg backface-hidden shadow-lg">
                     <img
                       src={item.image}
                       alt={item.title}
-                      className="mx-auto h-32 w-32 drop-shadow-md"
+                      className="h-32 w-32 drop-shadow-md object-contain"
                       style={{
-                        filter: 'brightness(0.5) contrast(1.2)',
-                        mixBlendMode: 'multiply',
+                        filter: "brightness(0.5) contrast(1.2)",
+                        mixBlendMode: "multiply",
                       }}
                     />
-                  </CardHeader>
-                  <CardContent>
-                    <CardTitle className="mb-4 text-center text-2xl">
+                    <h3 className="mt-4 text-2xl font-bold text-center card__z">
                       {item.title}
-                    </CardTitle>
-                    <CardDescription>{item.description}</CardDescription>
-                  </CardContent>
-                </Card>
-              </Tilt>
+                    </h3>
+                  </div>
+
+                  {/* Back Side */}
+                  <div className="absolute inset-0 flex items-center justify-center bg-gray-900 text-white p-6 rounded-lg rotate-y-180 backface-hidden">
+                    <p className="text-center text-lg card__z">{item.description}</p>
+                  </div>
+                </div>
+              </div>
             ))}
           </div>
         </div>
