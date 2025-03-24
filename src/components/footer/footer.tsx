@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import scImage from '@/assets/images/symbol.png';
 
 export function Footer() {
@@ -6,7 +8,7 @@ export function Footer() {
   const quickLinks = [
     { href: '/', label: 'Home' },
     { href: '/about', label: 'About Us' },
-    { href: '/solution', label: 'Solutions' },
+    { href: '/solutions', label: 'Solutions' },
     { href: '/history', label: 'History' },
   ];
 
@@ -34,12 +36,12 @@ export function Footer() {
           <ul className="mt-2 space-y-2">
             {quickLinks.map((link, index) => (
               <li key={index}>
-                <a
-                  href={link.href}
+                <Link
+                  to={link.href}
                   className="text-neutral-400 hover:text-white"
                 >
                   {link.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
