@@ -1,26 +1,16 @@
 .gallery {
-  column-count: 1;
-  column-gap: 1.5rem;
   width: 100%;
 
-  @media screen and (min-width: 480px) {
-    column-count: 2;
-  }
-
-  @media screen and (min-width: 768px) {
-    column-count: 3;
-  }
-
-  /* display: grid;
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
-  gap: 1.5rem; */
+  grid-auto-rows: 300px;
+  gap: 1.5rem;
 }
 
 .gallery-item {
   break-inside: avoid;
-  margin-bottom: 1.5rem;
   position: relative;
-  border-radius: 12px;
+  border-radius: 0.75rem;
   overflow: hidden;
   cursor: pointer;
 }
