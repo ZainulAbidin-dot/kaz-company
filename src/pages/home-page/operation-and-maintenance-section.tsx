@@ -1,42 +1,45 @@
-import om1 from '@/assets/images/om1.png';
-import om2 from '@/assets/images/om2.png';
-import om3 from '@/assets/images/om3.png';
+import bms from '@/assets/images/operations/bms.png';
+import communications from '@/assets/images/operations/communications.png';
+import ev from '@/assets/images/operations/ev.png';
+import iot from '@/assets/images/operations/iot.png';
+import twinning from '@/assets/images/operations/twinning.png';
+import traffic from '@/assets/images/operations/traffic.png';
 import { Wrapper } from '@/components/ui/wrapper';
 import { useFadeInAnimation } from '@/hooks/use-fadein-animation';
 
 const operationsMaintenance = [
   {
-    image: om2,
+    image: traffic,
     title: 'Transportation Systems',
     description:
       'Our transportation solutions ensure seamless mobility by integrating intelligent traffic management, public transit coordination, and smart infrastructure monitoring.',
   },
   {
-    image: om3,
+    image: bms,
     title: 'Building Management Systems',
     description:
       'We offer state-of-the-art building management systems that optimize energy consumption, automate security controls, and provide real-time monitoring for improved operational efficiency.',
   },
   {
-    image: om1,
+    image: ev,
     title: 'EV',
     description:
       'We design and implement advanced EV solutions, including automated charging station, space optimization, and real-time availability tracking to enhance efficiency and user experience.',
   },
   {
-    image: om1,
+    image: iot,
     title: 'IoT',
     description:
       'We design and implement advanced EV solutions, including automated charging station, space optimization, and real-time availability tracking to enhance efficiency and user experience.',
   },
   {
-    image: om1,
+    image: communications,
     title: 'Communication Systems',
     description:
       'We design and implement advanced parking solutions, including automated ticketing, space optimization, and real-time availability tracking to enhance efficiency and user experience.',
   },
   {
-    image: om1,
+    image: twinning,
     title: 'Digital Twinning',
     description:
       'We design and implement advanced parking solutions, including automated ticketing, space optimization, and real-time availability tracking to enhance efficiency and user experience.',
@@ -77,7 +80,7 @@ export function OperationAndMaintenanceSection() {
                       alt={item.title}
                       className="h-32 w-32 drop-shadow-md object-contain"
                       style={{
-                        filter: "brightness(0.5) contrast(1.2)",
+                        filter: "brightness(0.9) contrast(1.2)",
                         mixBlendMode: "multiply",
                       }}
                     />

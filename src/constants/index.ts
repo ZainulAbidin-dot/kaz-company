@@ -1,4 +1,4 @@
-import st1 from '@/assets/images/om1.png';
+// import partner10 from '@/assets/images/om1.png';
 import partner6 from '@/assets/images/partner6.jpg';
 import partner7 from '@/assets/images/partner7.jpg';
 import partner8 from '@/assets/images/partner8.jpg';
@@ -14,6 +14,8 @@ import partner17 from '@/assets/images/partner17.jpg';
 import partner18 from '@/assets/images/partner18.jpg';
 import partner19 from '@/assets/images/partner19.jpg';
 import partner20 from '@/assets/images/partner20.jpg';
+import partner21 from '@/assets/images/partner21.png';
+import partner22 from '@/assets/images/partner22.png';
 
 export const navLinks = [
   {
@@ -34,7 +36,7 @@ const experiences = [
   {
     title: 'React.js Developer',
     company_name: 'Starbucks',
-    icon: st1,
+    icon: partner10,
     iconBg: '#383E56',
     date: 'March 2020 - April 2021',
     points: [
@@ -47,7 +49,7 @@ const experiences = [
   {
     title: 'React Native Developer',
     company_name: 'Tesla',
-    icon: st1,
+    icon: partner10,
     iconBg: '#E6DEDD',
     date: 'Jan 2021 - Feb 2022',
     points: [
@@ -60,7 +62,7 @@ const experiences = [
   {
     title: 'Web Developer',
     company_name: 'Shopify',
-    icon: st1,
+    icon: partner10,
     iconBg: '#383E56',
     date: 'Jan 2022 - Jan 2023',
     points: [
@@ -73,7 +75,7 @@ const experiences = [
   {
     title: 'Full stack Developer',
     company_name: 'Meta',
-    icon: st1,
+    icon: partner10,
     iconBg: '#E6DEDD',
     date: 'Jan 2023 - Present',
     points: [
@@ -131,7 +133,7 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: st1,
+    image: partner10,
     source_code_link: 'https://github.com/',
   },
   {
@@ -152,7 +154,7 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: st1,
+    image: partner10,
     source_code_link: 'https://github.com/',
   },
   {
@@ -173,12 +175,14 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: st1,
+    image: partner10,
     source_code_link: 'https://github.com/',
   },
 ];
 
 const partners = [
+  partner21,
+  partner22,
   partner6,
   partner7,
   partner8,
@@ -193,7 +197,7 @@ const partners = [
   partner17,
   partner18,
   partner19,
-  partner20,
+  // partner20,
 ];
 
 export { experiences, testimonials, projects, partners };
