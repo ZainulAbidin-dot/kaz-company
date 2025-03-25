@@ -13,7 +13,7 @@ import partner16 from '@/assets/images/partner16.jpg';
 import partner17 from '@/assets/images/partner17.jpg';
 import partner18 from '@/assets/images/partner18.jpg';
 import partner19 from '@/assets/images/partner19.jpg';
-import partner20 from '@/assets/images/partner20.jpg';
+// import partner20 from '@/assets/images/partner20.jpg';
 import partner21 from '@/assets/images/partner21.png';
 import partner22 from '@/assets/images/partner22.png';
 
