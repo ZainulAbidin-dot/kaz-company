@@ -1,14 +1,14 @@
+import p1 from '@/assets/images/projects/p1.jpg';
+import p2 from '@/assets/images/projects/p2.jpg';
+import p3 from '@/assets/images/projects/p3.jpg';
+import p4 from '@/assets/images/projects/p4.jpg';
+import p5 from '@/assets/images/projects/p5.jpg';
+import p6 from '@/assets/images/projects/p6.jpg';
+import p8 from '@/assets/images/projects/p8.png';
+import p9 from '@/assets/images/projects/p9.png';
 import { ImageGallery, ImageItem } from '@/components/gallery/gallery';
 import { Wrapper } from '@/components/ui/wrapper';
 import { useFadeInAnimation } from '@/hooks/use-fadein-animation';
-import p1 from '@/assets/images/projects/p1.jpg'
-import p2 from '@/assets/images/projects/p2.jpg'
-import p3 from '@/assets/images/projects/p3.jpg'
-import p4 from '@/assets/images/projects/p4.jpg'
-import p5 from '@/assets/images/projects/p5.jpg'
-import p6 from '@/assets/images/projects/p6.jpg'
-import p8 from '@/assets/images/projects/p8.png'
-import p9 from '@/assets/images/projects/p9.png'
 
 const galleryData: ImageItem[] = [
   {
@@ -24,14 +24,13 @@ const galleryData: ImageItem[] = [
     src: p2,
     alt: 'Modern architecture',
     title: 'Saudi German Hospital',
-    description:
-      '',
+    description: '',
   },
   {
     id: '3',
     src: p3,
     alt: 'Waterfall',
-    title: "Kingdom Hospital",
+    title: 'Kingdom Hospital',
     description: '',
   },
   {
@@ -46,24 +45,21 @@ const galleryData: ImageItem[] = [
     src: p5,
     alt: 'Urban night',
     title: 'Saudi Aramco Lab R & D',
-    description:
-      '',
+    description: '',
   },
   {
     id: '6',
     src: p6,
     alt: 'Nature landscape',
     title: 'Kingdom Tower',
-    description:
-      '',
+    description: '',
   },
   {
     id: '7',
     src: p9,
     alt: 'Nature landscape',
     title: 'King Fahad Airbase - Taif',
-    description:
-      '',
+    description: '',
   },
 
   {
@@ -71,8 +67,14 @@ const galleryData: ImageItem[] = [
     src: p8,
     alt: 'Nature landscape',
     title: 'Faisaliya Tower',
-    description:
-      '',
+    description: '',
+  },
+  {
+    id: '9',
+    src: 'https://images.pexels.com/photos/3774243/pexels-photo-3774243.jpeg?cs=srgb&dl=pexels-souvenirpixels-3774243.jpg&fm=jpg',
+    alt: 'Nature landscape',
+    title: 'King Fahad Airbase - Taif',
+    description: '',
   },
 ];
 
