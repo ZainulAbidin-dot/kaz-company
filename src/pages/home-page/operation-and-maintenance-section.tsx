@@ -30,13 +30,13 @@ const operationsMaintenance = [
     image: iot,
     title: 'IoT',
     description:
-      'We design and implement advanced EV solutions, including automated charging station, space optimization, and real-time availability tracking to enhance efficiency and user experience.',
+      'We develop and deploy cutting-edge IoT solutions, enabling real-time data collection, intelligent automation, and seamless device integration to enhance operational efficiency and user experience.',
   },
   {
     image: communications,
     title: 'Communication Systems',
     description:
-      'We design and implement advanced parking solutions, including automated ticketing, space optimization, and real-time availability tracking to enhance efficiency and user experience.',
+      'We design and implement advanced communication systems, including seamless connectivity, real-time data transmission, and integrated network solutions to enhance efficiency and user experience.',
   },
   {
     image: twinning,

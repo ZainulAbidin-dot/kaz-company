@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 
 import scImage from '@/assets/images/symbol.png';
+import pdfFile from '@/assets/files/brochure.pdf'; // Ensure the PDF is stored in the correct path
+
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -57,6 +59,16 @@ export function Footer() {
               </li>
             ))}
           </ul>
+          {/* Downloadable PDF Link */}
+          <div className="mt-4">
+            <a
+              href={pdfFile}
+              download
+              className="inline-block px-4 py-2 mt-2 text-white bg-blue-600 rounded-sm hover:bg-blue-700"
+            >
+              Download Brochure (PDF)
+            </a>
+          </div>
         </div>
       </div>
 
