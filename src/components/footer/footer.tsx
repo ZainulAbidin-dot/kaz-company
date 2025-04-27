@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 
 import scImage from '@/assets/images/logo.jpg';
-import pdfFile from '@/assets/files/Brochure.pdf'; // Ensure the PDF is stored in the correct path
 
 
 export function Footer() {

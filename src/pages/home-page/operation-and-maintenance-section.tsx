@@ -1,8 +1,4 @@
 import bms from '@/assets/images/operations/bms.png';
-import communications from '@/assets/images/operations/communications.png';
-import ev from '@/assets/images/operations/ev.png';
-import iot from '@/assets/images/operations/iot.png';
-import twinning from '@/assets/images/operations/twinning.png';
 import traffic from '@/assets/images/operations/traffic.png';
 import { Wrapper } from '@/components/ui/wrapper';
 import { useFadeInAnimation } from '@/hooks/use-fadein-animation';
