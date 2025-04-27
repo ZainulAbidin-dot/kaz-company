@@ -1,6 +1,6 @@
 import React from 'react';
 
-import logo from '@/assets/images/logo.jpg';
+import logo from '@/assets/images/logo-trans.png';
 import { useIsMobile } from '@/hooks/use-is-mobile';
 import { cn } from '@/lib/utils';
 
@@ -35,7 +35,7 @@ export const Navbar = React.forwardRef<HTMLDivElement, NavbarProps>(
       >
         <Wrapper>
           <div className={cn('py-4', 'flex items-center justify-between')}>
-            <img src={logo} alt="KAZ" className="h-16" />
+            <img src={logo} alt="KAZ" className="h-19" />
 
             {isMobile ? <MobileNavLinks /> : <DesktopNavLinks />}
           </div>

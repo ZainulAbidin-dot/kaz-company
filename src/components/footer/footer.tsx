@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-import scImage from '@/assets/images/logo.jpg';
+import scImage from '@/assets/images/logo-trans.png';
 
 
 export function Footer() {
@@ -25,7 +25,7 @@ export function Footer() {
       <div className="container mx-auto grid grid-cols-1 gap-8 px-4 md:grid-cols-3">
         {/* Company Info */}
         <div className="group">
-          <img src={scImage} alt="" className="h-22 mb-2" />
+          <img src={scImage} alt="" className="h-42" />
           <h3 className="text-5xl font-bold text-filled-animation">KAZ </h3>
           <p className="mt-2 text-neutral-400 ">
             We Provide Employment Services To Small, Medium And Large Companies.
