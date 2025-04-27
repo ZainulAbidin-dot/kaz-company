@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 
 import {
-  ClockIcon,
   HomeIcon,
   MailIcon,
   MenuIcon,
-  Settings,
   XIcon,
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
