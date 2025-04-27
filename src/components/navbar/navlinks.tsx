@@ -21,20 +21,25 @@ const navLinks = [
     icon: HomeIcon,
   },
   {
-    title: 'About',
-    href: '/about',
+    title: 'Jobs',
+    href: '/',
     icon: MailIcon,
   },
   {
-    title: 'History',
-    href: '/history',
-    icon: ClockIcon,
+    title: 'Contact Us',
+    href: '/#contact-info',
+    icon: MailIcon,
   },
-  {
-    title: 'Solutions',
-    href: '/solutions',
-    icon: Settings,
-  },
+  // {
+  //   title: 'History',
+  //   href: '/history',
+  //   icon: ClockIcon,
+  // },
+  // {
+  //   title: 'Solutions',
+  //   href: '/solutions',
+  //   icon: Settings,
+  // },
 ];
 
 export function DesktopNavLinks() {

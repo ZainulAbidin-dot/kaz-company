@@ -26,7 +26,7 @@ const solutions: Solution[] = [
   {
     title: "Intelligent Transportation System (ITS)",
     content: [
-      "Saudi Controls is revolutionizing urban mobility by implementing AI-driven traffic management solutions that enhance efficiency, safety, and sustainability. Through real-time congestion prediction and adaptive signal control, our systems dynamically adjust traffic signals to optimize flow and reduce delays.",
+      "KAZ is revolutionizing urban mobility by implementing AI-driven traffic management solutions that enhance efficiency, safety, and sustainability. Through real-time congestion prediction and adaptive signal control, our systems dynamically adjust traffic signals to optimize flow and reduce delays.",
       "Advanced collision avoidance technology ensures safer intersections, while Traffic Signal Priority Systems enhance emergency response and public transport efficiency. Additionally, our Pedestrian Signal Control Systems improve walkability by prioritizing foot traffic in high-density areas. As cities embrace electric mobility, we support the integration of EV charging infrastructure with smart grids, ensuring a seamless, sustainable urban future.",
     ],
     quote:
@@ -40,7 +40,7 @@ const solutions: Solution[] = [
   {
     title: "Building Intelligent Ecosystems",
     content: [
-      "Saudi Controls is transforming smart building automation with IoT-enabled Building Management Systems (BMS) that optimize energy efficiency, security, and fire safety. By integrating centralized fire detection systems and real-time monitoring, we enhance safety while reducing operational costs.",
+      "KAZ is transforming smart building automation with IoT-enabled Building Management Systems (BMS) that optimize energy efficiency, security, and fire safety. By integrating centralized fire detection systems and real-time monitoring, we enhance safety while reducing operational costs.",
       "Our solutions ensure seamless automation, making buildings more intelligent, responsive, and sustainable. In urban development, we drive sustainability through green building certifications, EV charging networks, and solar energy integration. Additionally, our legacy modernization solutions retrofit outdated systems with AI-driven controls, bringing older infrastructures up to modern efficiency and performance standards.",
     ],
     quote:

@@ -10,40 +10,40 @@ import { useFadeInAnimation } from '@/hooks/use-fadein-animation';
 const operationsMaintenance = [
   {
     image: traffic,
-    title: 'Transportation Systems',
+    title: 'Job application (individuals)',
     description:
-      'Our transportation solutions ensure seamless mobility by integrating intelligent traffic management, public transit coordination, and smart infrastructure monitoring.',
+      'View Jobs.',
   },
   {
     image: bms,
-    title: 'Building Management Systems',
+    title: 'Request for employees (sectors)',
     description:
-      'We offer state-of-the-art building management systems that optimize energy consumption, automate security controls, and provide real-time monitoring for improved operational efficiency.',
+      'View Details.',
   },
-  {
-    image: ev,
-    title: 'EV',
-    description:
-      'We design and implement advanced EV solutions, including automated charging station, space optimization, and real-time availability tracking to enhance efficiency and user experience.',
-  },
-  {
-    image: iot,
-    title: 'IoT',
-    description:
-      'We develop and deploy cutting-edge IoT solutions, enabling real-time data collection, intelligent automation, and seamless device integration to enhance operational efficiency and user experience.',
-  },
-  {
-    image: communications,
-    title: 'Communication Systems',
-    description:
-      'We design and implement advanced communication systems, including seamless connectivity, real-time data transmission, and integrated network solutions to enhance efficiency and user experience.',
-  },
-  {
-    image: twinning,
-    title: 'Digital Twinning',
-    description:
-      'We design and implement advanced parking solutions, including automated ticketing, space optimization, and real-time availability tracking to enhance efficiency and user experience.',
-  },
+  // {
+  //   image: ev,
+  //   title: 'EV',
+  //   description:
+  //     'We design and implement advanced EV solutions, including automated charging station, space optimization, and real-time availability tracking to enhance efficiency and user experience.',
+  // },
+  // {
+  //   image: iot,
+  //   title: 'IoT',
+  //   description:
+  //     'We develop and deploy cutting-edge IoT solutions, enabling real-time data collection, intelligent automation, and seamless device integration to enhance operational efficiency and user experience.',
+  // },
+  // {
+  //   image: communications,
+  //   title: 'Communication Systems',
+  //   description:
+  //     'We design and implement advanced communication systems, including seamless connectivity, real-time data transmission, and integrated network solutions to enhance efficiency and user experience.',
+  // },
+  // {
+  //   image: twinning,
+  //   title: 'Digital Twinning',
+  //   description:
+  //     'We design and implement advanced parking solutions, including automated ticketing, space optimization, and real-time availability tracking to enhance efficiency and user experience.',
+  // },
 
 ];
 
@@ -61,15 +61,9 @@ export function OperationAndMaintenanceSection() {
             Operation & Maintenance
           </h2>
           <p className="text-muted-foreground text-lg">
-            The ability to integrate operations and maintenance constraints from
-            the design stage is key to guaranteeing that the system is
-            functional and maintained in line with budget forecasts throughout
-            its useful life. SCL boasts this unique knowhow thanks to its
-            engineers who are specialized in operations and maintenance. SCL
-            sometimes goes beyond its role of engineering and project management
-            and operates and maintains the following systems infrastructures:
+            Kaz is a recruitment brokerage firm specializing in the hospitality industry. We offer employment services to small, medium, and large businesses, delivering faster and more localized hiring solutions compared to traditional recruitment channels.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
             {operationsMaintenance.map((item, index) => (
               <div key={index} className="group perspective">
                 <div className="relative w-full h-[400px] transform-style-3d transition-transform duration-1500 group-hover:rotate-y-180">

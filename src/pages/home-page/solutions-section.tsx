@@ -132,7 +132,7 @@ export function SolutionsSection() {
               Solution & Technologies
             </h1>
             <p className="text-lg leading-relaxed text-gray-600">
-              Saudi Controls specializes in tailored high-tech solutions, spanning building automation, industrial systems, communications, and security.
+              KAZ specializes in tailored high-tech solutions, spanning building automation, industrial systems, communications, and security.
             </p>
             <p className="my-6 text-lg leading-relaxed text-gray-600">              
               From intelligent building management to advanced security systems, our expertise ensures seamless integration, reliability, and future-ready innovations for our clients. 

@@ -43,7 +43,7 @@ export function AboutPage() {
             <div className="space-y-6 lg:w-1/2">
                 <h2 className="text-3xl font-bold lg:text-5xl text-gray-900">Our Promise</h2>
                 <p className="text-lg text-gray-600">
-                At Saudi Controls, we don’t just deploy systems—we architect future-ready ecosystems where innovation meets reliability. By integrating Saudi talent with global expertise, we transform Vision 2030’s ambitions into operational realities. Our team of highly skilled professionals works closely with clients to develop customized, scalable solutions that meet the evolving demands of the Kingdom’s infrastructure. From smart cities to industrial automation, we are dedicated to shaping a more connected and intelligent future.
+                At KAZ, we don’t just deploy systems—we architect future-ready ecosystems where innovation meets reliability. By integrating Saudi talent with global expertise, we transform Vision 2030’s ambitions into operational realities. Our team of highly skilled professionals works closely with clients to develop customized, scalable solutions that meet the evolving demands of the Kingdom’s infrastructure. From smart cities to industrial automation, we are dedicated to shaping a more connected and intelligent future.
                 </p>
             </div>
             <div

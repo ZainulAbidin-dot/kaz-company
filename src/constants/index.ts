@@ -1,21 +1,21 @@
 // import partner10 from '@/assets/images/om1.png';
-import partner6 from '@/assets/images/partner6.jpg';
-import partner7 from '@/assets/images/partner7.jpg';
-import partner8 from '@/assets/images/partner8.jpg';
-import partner9 from '@/assets/images/partner9.jpg';
-import partner10 from '@/assets/images/partner10.jpg';
-import partner11 from '@/assets/images/partner11.jpg';
-import partner12 from '@/assets/images/partner12.jpg';
-import partner13 from '@/assets/images/partner13.jpg';
-import partner14 from '@/assets/images/partner14.jpg';
-import partner15 from '@/assets/images/partner15.jpg';
-import partner16 from '@/assets/images/partner16.jpg';
-import partner17 from '@/assets/images/partner17.jpg';
-import partner18 from '@/assets/images/partner18.jpg';
-import partner19 from '@/assets/images/partner19.jpg';
+import partner6 from '@/assets/images/p1.webp';
+import partner7 from '@/assets/images/p2.webp';
+import partner8 from '@/assets/images/p3.webp';
+import partner9 from '@/assets/images/p4.webp';
+import partner10 from '@/assets/images/p5.webp';
+import partner11 from '@/assets/images/p6.webp';
+import partner12 from '@/assets/images/p7.webp';
+import partner13 from '@/assets/images/p8.webp';
+import partner14 from '@/assets/images/p9.webp';
+import partner15 from '@/assets/images/p10.webp';
+import partner16 from '@/assets/images/p11.webp';
+import partner17 from '@/assets/images/p12.webp';
+import partner18 from '@/assets/images/p13.webp';
+import partner19 from '@/assets/images/p14.webp';
 // import partner20 from '@/assets/images/partner20.jpg';
-import partner21 from '@/assets/images/partner21.png';
-import partner22 from '@/assets/images/partner22.png';
+// import partner21 from '@/assets/images/partner21.png';
+// import partner22 from '@/assets/images/partner22.png';
 
 export const navLinks = [
   {
@@ -181,8 +181,8 @@ const projects = [
 ];
 
 const partners = [
-  partner21,
-  partner22,
+  // partner21,
+  // partner22,
   partner6,
   partner7,
   partner8,

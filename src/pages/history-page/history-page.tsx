@@ -10,7 +10,7 @@ const events = [
     cardTitle: 'Company Foundation',
     cardSubtitle: 'Founded by Engr. Abdulrahman Alshathry in KSA',
     cardDetailedText:
-      'Saudi Controls was established in KSA with a vision to become a leading provider of industrial automation and control systems in the Kingdom of Saudi Arabia.',
+      'KAZ was established in KSA with a vision to become a leading provider of industrial automation and control systems in the Kingdom of Saudi Arabia.',
   },
   {
     title: '1997',
@@ -296,7 +296,7 @@ const events = [
     cardTitle: 'Strategic Partnerships',
     cardSubtitle: 'Collaborations with L&T and AT&T',
     cardDetailedText:
-      'SCL signed a strategic partnership with Larson and Touber (L&T) Electrical and Automation Saudi Arabia Co. Ltd. and a separate partnership with AT&T Cabling.',
+      'SCL signed a strategic partnership with Larson and Touber (L&T) Electrical and Automation Saudi Arabia Co.  and a separate partnership with AT&T Cabling.',
   },
   {
     title: '2018',
@@ -422,7 +422,7 @@ export function HistoryPage() {
 
       <div className="relative z-10 mx-auto max-w-7xl px-4">
         <h1 className="my-8 mt-30 text-center !text-3xl font-bold text-white md:!text-5xl">
-          Saudi Controls History
+          KAZ History
         </h1>
         <HistoryTimeline />
       </div>

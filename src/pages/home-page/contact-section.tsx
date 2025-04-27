@@ -58,7 +58,7 @@ function ContactInfo() {
     threshold: 0.25,
   });
   return (
-    <div ref={sectionRef} data-animatable>
+    <div ref={sectionRef} data-animatable id='contact-info'>
       <h2 className="text-3xl font-bold lg:text-5xl">
         Ready to Connect With Us?
       </h2>
@@ -79,20 +79,20 @@ function ContactInfo() {
             <h3 className="text-lg font-semibold text-neutral-900">
               Call us anytime
             </h3>
-            <span className="text-lg text-neutral-600">+966 (11) 480 3338</span>
+            <span className="text-lg text-neutral-600">+966 57 057 2181</span>
           </div>
         </a>
 
         <a
           className="flex items-center gap-4 rounded-lg px-4 py-2 transition-colors hover:bg-neutral-50"
-          href="mailto:info@saudicontrols.com"
+          href="mailto:info@kazsa.net"
         >
           <div className="inline-flex size-14 items-center justify-center rounded-full bg-neutral-50 p-4">
             <MailPlusIcon className="text-neutral-600" />
           </div>
           <div className="flex flex-col">
             <h3 className="text-lg font-semibold text-neutral-900">Email us</h3>
-            <span className="text-lg text-neutral-600">info@saudicontrols.com</span>
+            <span className="text-lg text-neutral-600">info@kazsa.net</span>
           </div>
         </a>
 

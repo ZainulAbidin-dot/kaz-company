@@ -11,10 +11,10 @@ export function HomePage() {
     <div className="">
       <HeroSection />
       <AboutSection />
-      <SolutionsSection />
+      {/* <SolutionsSection /> */}
       <OperationAndMaintenanceSection />
       <PartnersSection />
-      <GallerySection />
+      {/* <GallerySection /> */}
       <ContactSection />
     </div>
   );
