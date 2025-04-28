@@ -13,7 +13,7 @@ type NavbarProps = {
 };
 
 export const Navbar = React.forwardRef<HTMLDivElement, NavbarProps>(
-  ({ pastThreshold, navHeightInPx }, navbarRef) => {
+  ({ pastThreshold }, navbarRef) => {
     const { isMobile } = useIsMobile();
 
     return (
