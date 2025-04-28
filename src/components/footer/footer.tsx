@@ -21,7 +21,7 @@ export function Footer() {
   ];
 
   return (
-    <footer className="bg-gradient-to-r from-neutral-800 to-neutral-950 pt-16 pb-8 text-white">
+    <footer className="bg-gradient-to-r from-neutral-800 to-neutral-950 pt-16 pb-8 text-white  rounded-t-2xl">
       <div className="container mx-auto grid grid-cols-1 gap-8 px-4 md:grid-cols-3">
         {/* Company Info */}
         <div className="group">
@@ -40,7 +40,7 @@ export function Footer() {
               <li key={index}>
                 <Link
                   to={link.href}
-                  className="text-neutral-400 hover:text-white"
+                  className="text-neutral-400 text-lg hover:text-white"
                 >
                   {link.label}
                 </Link>

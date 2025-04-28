@@ -15,7 +15,7 @@ export function AboutSection() {
       <Wrapper>
         <div className="flex flex-col items-center gap-12 lg:flex-row">
           <div
-            className="background-stripes parallax-effect-glare-scale space-y-6 px-2 py-6 shadow-xl lg:w-1/2"
+            className="background-stripes parallax-effect-glare-scale space-y-6 px-2 py-6 shadow-xl lg:w-1/2 rounded-2xl"
           >
           <Tilt
             className="parallax-effect-glare-scale "

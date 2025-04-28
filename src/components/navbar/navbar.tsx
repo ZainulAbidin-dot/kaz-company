@@ -30,12 +30,12 @@ export const Navbar = React.forwardRef<HTMLDivElement, NavbarProps>(
             : ''
         )}
         style={{
-          height: `${navHeightInPx}px`,
+          height: `134px`,
         }}
       >
-        <Wrapper>
-          <div className={cn('py-4', 'flex items-center justify-between')}>
-            <img src={logo} alt="KAZ" className="h-19" />
+        <Wrapper className='max-w-[99%]'>
+          <div className={cn('py-4', 'flex items-center justify-start gap-[37vw]')}>
+            <img src={logo} alt="KAZ" className="h-[100px]" />
 
             {isMobile ? <MobileNavLinks /> : <DesktopNavLinks />}
           </div>

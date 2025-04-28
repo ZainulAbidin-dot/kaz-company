@@ -50,8 +50,10 @@ export function DesktopNavLinks() {
             className={cn(
               'flex items-center gap-1',
               '!text-white hover:!underline',
-              'transition-colors duration-200'
+              'transition-colors duration-200',
+              'backdrop-blur p-2 rounded-lg text-lg',
             )}
+            
           >
             <span>{link.title}</span>
           </Link>
