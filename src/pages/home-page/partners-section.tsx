@@ -1,8 +1,6 @@
-import { BallCanvas } from '@/components/Ball';
 import { Wrapper } from '@/components/ui/wrapper';
 import { partners } from '@/constants';
 import { useFadeInAnimation } from '@/hooks/use-fadein-animation';
-import { useIsMobile } from '@/hooks/use-is-mobile';
 
 export function PartnersSection() {
   const sectionRef = useFadeInAnimation({
@@ -10,7 +8,6 @@ export function PartnersSection() {
     animationClass: 'animate-fadeInDown',
   });
 
-  const { isMobile } = useIsMobile();
 
   return (
     <section className="py-20" ref={sectionRef} data-animatable>
@@ -25,7 +22,7 @@ export function PartnersSection() {
                   <div className="flex justify-center gap-4">
                     {partners.map((partner, index) => (
                       <div
-                        className="flex aspect-square size-44 items-stretch justify-stretch rounded-md border p-2 shadow"
+                        className="flex aspect-square size-34 items-stretch justify-stretch rounded-md border p-2 shadow"
                         key={index}
                       >
                         <img
@@ -43,7 +40,7 @@ export function PartnersSection() {
                   <div className="flex justify-center gap-4">
                     {partners.map((partner, index) => (
                       <div
-                        className="flex aspect-square size-44 items-stretch justify-stretch rounded-md border p-2 shadow"
+                        className="flex aspect-square size-34 items-stretch justify-stretch rounded-md border p-2 shadow"
                         key={index}
                       >
                         <img
