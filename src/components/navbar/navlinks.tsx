@@ -25,38 +25,38 @@ const navLinks = [
   },
   {
     title: 'Contact Us',
-    href: '/#contact-info',
+    href: '#contact-info',
     icon: MailIcon,
   },
-  // {
-  //   title: 'History',
-  //   href: '/history',
-  //   icon: ClockIcon,
-  // },
-  // {
-  //   title: 'Solutions',
-  //   href: '/solutions',
-  //   icon: Settings,
-  // },
 ];
+
+function scrollToSection(id: string) {
+  const section = document.getElementById(id);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+}
 
 export function DesktopNavLinks() {
   return (
     <ul className="flex items-center gap-4">
       {navLinks.map((link) => (
         <li key={link.href}>
-          <Link
-            to={link.href}
+          <button
+            onClick={() => {
+              if (link.href.startsWith('#')) {
+                scrollToSection(link.href.substring(1));
+              }
+            }}
             className={cn(
               'flex items-center gap-1',
-              '!text-white hover:!underline',
+              '!text-white ',
               'transition-colors duration-200',
-              'backdrop-blur p-2 rounded-lg text-lg',
+              'bg-black/20 p-2 rounded-sm text-lg',
             )}
-            
           >
-            <span>{link.title}</span>
-          </Link>
+            <span className='cursor-pointer'>{link.title}</span>
+          </button>
         </li>
       ))}
     </ul>
@@ -85,19 +85,23 @@ export function MobileNavLinks() {
           <ul className="flex flex-col p-4 text-base">
             {navLinks.map((link) => (
               <li key={link.href}>
-                <Link
-                  to={link.href}
+                <button
+                  onClick={() => {
+                    if (link.href.startsWith('#')) {
+                      scrollToSection(link.href.substring(1));
+                      setIsOpen(false);
+                    }
+                  }}
                   className={cn(
                     'flex items-center gap-2',
                     '!text-white hover:!underline',
                     'transition-colors duration-200',
                     'py-2'
                   )}
-                  onClick={() => setIsOpen(false)}
                 >
                   <link.icon className="size-4" />
                   <span>{link.title}</span>
-                </Link>
+                </button>
               </li>
             ))}
           </ul>

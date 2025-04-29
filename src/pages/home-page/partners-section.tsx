@@ -19,25 +19,13 @@ export function PartnersSection() {
           <h2 className="text-center text-3xl font-bold sm:text-4xl md:text-5xl">
             Our Partners
           </h2>
-          {!isMobile ? (
-            <div className="flex flex-wrap justify-center gap-4">
-              {partners.map((partner, index) => (
-                <div
-                  className="size-24 sm:size-36 md:size-42 lg:size-48"
-                  key={index}
-                >
-                  <BallCanvas icon={partner} />
-                </div>
-              ))}
-            </div>
-          ) : (
             <div className="flex flex-col gap-4">
               <div className="overflow-x-hidden">
                 <div className="animate-marquee whitespace-nowrap">
                   <div className="flex justify-center gap-4">
                     {partners.map((partner, index) => (
                       <div
-                        className="flex aspect-square size-24 items-stretch justify-stretch rounded-md border p-2 shadow"
+                        className="flex aspect-square size-44 items-stretch justify-stretch rounded-md border p-2 shadow"
                         key={index}
                       >
                         <img
@@ -55,7 +43,7 @@ export function PartnersSection() {
                   <div className="flex justify-center gap-4">
                     {partners.map((partner, index) => (
                       <div
-                        className="flex aspect-square size-24 items-stretch justify-stretch rounded-md border p-2 shadow"
+                        className="flex aspect-square size-44 items-stretch justify-stretch rounded-md border p-2 shadow"
                         key={index}
                       >
                         <img
@@ -69,7 +57,6 @@ export function PartnersSection() {
                 </div>
               </div>
             </div>
-          )}
         </div>
       </Wrapper>
     </section>
