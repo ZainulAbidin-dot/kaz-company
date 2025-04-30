@@ -11,8 +11,9 @@ export function Footer() {
 
   const quickLinks = [
     { href: '/', label: 'Home' },
-    { href: '/', label: 'Jobs' },
+    { href: '/jobs', label: 'Jobs' },
     { href: '/#contact-info', label: 'Contact Us' },
+    { href: '/', label: 'Language' },
   ];
 
   const socialLinks = [

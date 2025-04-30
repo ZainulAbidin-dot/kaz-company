@@ -19,12 +19,17 @@ const navLinks = [
   },
   {
     title: 'Jobs',
-    href: '/',
+    href: '/jobs',
     icon: MailIcon,
   },
   {
     title: 'Contact Us',
     href: '#contact-info',
+    icon: MailIcon,
+  },
+  {
+    title: 'Language',
+    href: '/',
     icon: MailIcon,
   },
 ];
