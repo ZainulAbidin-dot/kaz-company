@@ -103,6 +103,9 @@ export function JobPage() {
 
   // Fetch data from API
   React.useEffect(() => {
+    setLoading(false)
+    setError(null);
+    setEvents(events);
     // const fetchEvents = async () => {
     //   try {
     //     const response = await fetch("http://localhost:5000/admin/event/", {
