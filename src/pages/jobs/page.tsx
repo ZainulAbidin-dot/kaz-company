@@ -57,7 +57,7 @@ export function JobPage() {
     const [events, setEvents] = React.useState<Event[]>([
         {
             _id: "1",
-            name: "Beach Cleanup",
+            name: "Bartender",
             description: "Join us for a beach cleanup event.",
             region: "West Coast",
             city: "Los Angeles",
@@ -71,7 +71,7 @@ export function JobPage() {
         },
         {
             _id: "2",
-            name: "Tree Planting",
+            name: "Tea boy",
             description: "Help us plant trees in the community park.",
             region: "Midwest",
             city: "Chicago",
@@ -85,7 +85,7 @@ export function JobPage() {
         },
         {
             _id: "3",
-            name: "Food Drive",
+            name: "Waiter",
             description: "Assist in organizing and distributing food to those in need.",
             region: "East Coast",
             city: "New York",
@@ -232,7 +232,7 @@ export function JobPage() {
         <>
           <div className="flex items-center py-4">
             <Input
-              placeholder="Filter events..."
+              placeholder="Filter Jobs..."
               value={(table.getColumn("name")?.getFilterValue() as string) ?? ""}
               onChange={(event) =>
                 table.getColumn("name")?.setFilterValue(event.target.value)

@@ -51,9 +51,12 @@ export function DesktopNavLinks() {
               if (link.href.startsWith('#')) {
                 scrollToSection(link.href.substring(1));
               }
+              else {
+                window.location.href = link.href;
+              }
             }}
             className={cn(
-              'flex items-center gap-1',
+              'z-10 flex items-center gap-1',
               '!text-white ',
               'transition-colors duration-200',
               'bg-black/20 p-2 rounded-sm text-lg',
